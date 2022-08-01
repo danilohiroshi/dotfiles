@@ -15,3 +15,7 @@ vim.api.nvim_set_keymap("n", "<CR>", '<esc>:noh<CR>', {noremap=true, silent=true
 
 -- Close buffer
 vim.api.nvim_set_keymap("n", "<c-w>", ':bdelete<cr>', {noremap=true, silent=true})
+
+-- Undo
+vim.api.nvim_set_keymap("i", "<c-z>", '<esc>ui', {noremap=true, silent=true})
+vim.api.nvim_set_keymap("n", "<c-z>", 'u', {noremap=true, silent=true})
