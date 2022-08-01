@@ -8,3 +8,7 @@ vim.api.nvim_set_keymap("n", "-", '<esc>:Explore<CR>', {noremap=true, silent=tru
 -- Duplicate line
 vim.api.nvim_set_keymap("n", "<c-d>", '<S-v>yp', {noremap=true, silent=true})
 vim.api.nvim_set_keymap("v", "<c-d>", 'ygv<esc>p', {noremap=true, silent=true})
+
+-- Clear highlighting
+vim.api.nvim_set_keymap("v", "<CR>", '<esc>:noh<CR>', {noremap=true, silent=true})
+vim.api.nvim_set_keymap("n", "<CR>", '<esc>:noh<CR>', {noremap=true, silent=true})

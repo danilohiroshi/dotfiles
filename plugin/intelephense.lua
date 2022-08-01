@@ -24,29 +24,17 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', '<space>f', vim.lsp.buf.formatting, bufopts)
 end
 
-require('lspconfig')['intelephense'].setup{
-    on_attach = on_attach,
-    settings = {
-        intelephense = {
-            stubs = {
-                "bcmath",
-                "bz2",
-                "calendar",
-                "Core",
-                "curl",
-                "zip",
-                "zlib",
-                "wordpress",
-                "woocommerce",
-                "acf-pro",
-                "wordpress-globals",
-                "wp-cli",
-                "genesis",
-                "polylang"
-            },
-            files = {
-                maxSize = 5000000;
-            };
-        };
-    }
+local lsp_flags = {
+    -- This is the default in Nvim 0.7+
+    debounce_text_changes = 150,
+}
+
+require('lspconfig')['intelephense'].setup {
+  on_attach = on_attach,
+  flags = lsp_flags,
+  settings = {
+    files = {
+      maxSize = 5000000;
+    };
+  }
 }
