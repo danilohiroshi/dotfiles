@@ -34,7 +34,16 @@ require('lspconfig')['intelephense'].setup {
   flags = lsp_flags,
   settings = {
     files = {
-      maxSize = 5000000;
+      maxSize = 10000000;
+      associations = {
+        "*.php",
+        "*.phtml",
+        "*.inc",
+        "*.module",
+        "*.install",
+        "*.theme",
+        "*.test",
+      };
     };
   }
 }
