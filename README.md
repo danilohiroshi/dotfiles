@@ -24,6 +24,8 @@ rg --version
 ```
 
 ## Install plugins
+- Install packer
+- https://github.com/wbthomason/packer.nvim#quickstart
 
 ```bash
 # Open neovim
