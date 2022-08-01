@@ -3,3 +3,6 @@ vim.api.nvim_set_keymap("n", "<c-p>", ':Telescope find_files<CR>', {noremap=true
 
 -- Global Search: Ctrl-Shift-f
 vim.api.nvim_set_keymap("n", "<C-f>", ':Telescope live_grep<CR>', {noremap=true, silent=true})
+
+-- Open Old files
+vim.api.nvim_set_keymap("n", "<c-e>", ':Telescope oldfiles<CR>', {noremap=true, silent=true})

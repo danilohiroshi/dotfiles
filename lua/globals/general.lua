@@ -8,5 +8,9 @@ vim.o.expandtab = true
 vim.o.tabstop = 2
 vim.o.shiftwidth = 2
 
+-- Enable mouse
 vim.g.mouse = a
 vim.g.mouse = nicr
+
+-- Disable swapfiles
+vim.cmd('set noswapfile')
