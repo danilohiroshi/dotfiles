@@ -1,30 +1,3 @@
-local nvim_lsp = require'lspconfig'
-nvim_lsp.intelephense.setup({
-    settings = {
-        intelephense = {
-            stubs = {
-                "bcmath",
-                "bz2",
-                "calendar",
-                "Core",
-                "curl",
-                "zip",
-                "zlib",
-                "wordpress",
-                "woocommerce",
-                "acf-pro",
-                "wordpress-globals",
-                "wp-cli",
-                "genesis",
-                "polylang"
-            },
-            files = {
-                maxSize = 5000000;
-            };
-        };
-    }
-});
-
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
 local on_attach = function(client, bufnr)
@@ -50,3 +23,30 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
   vim.keymap.set('n', '<space>f', vim.lsp.buf.formatting, bufopts)
 end
+
+require('lspconfig')['intelephense'].setup{
+    on_attach = on_attach,
+    settings = {
+        intelephense = {
+            stubs = {
+                "bcmath",
+                "bz2",
+                "calendar",
+                "Core",
+                "curl",
+                "zip",
+                "zlib",
+                "wordpress",
+                "woocommerce",
+                "acf-pro",
+                "wordpress-globals",
+                "wp-cli",
+                "genesis",
+                "polylang"
+            },
+            files = {
+                maxSize = 5000000;
+            };
+        };
+    }
+}
