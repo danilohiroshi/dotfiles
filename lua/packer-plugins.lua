@@ -20,4 +20,13 @@ return require('packer').startup(function()
 
   -- Auto-completion
   use({ "hrsh7th/nvim-cmp"})
+
+  -- Status line
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
+
+  -- Buffer line
+  use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
 end)

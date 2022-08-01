@@ -12,3 +12,6 @@ vim.api.nvim_set_keymap("v", "<c-d>", 'ygv<esc>p', {noremap=true, silent=true})
 -- Clear highlighting
 vim.api.nvim_set_keymap("v", "<CR>", '<esc>:noh<CR>', {noremap=true, silent=true})
 vim.api.nvim_set_keymap("n", "<CR>", '<esc>:noh<CR>', {noremap=true, silent=true})
+
+-- Close buffer
+vim.api.nvim_set_keymap("n", "<c-w>", ':bdelete<cr>', {noremap=true, silent=true})
