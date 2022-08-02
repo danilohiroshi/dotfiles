@@ -52,7 +52,7 @@ lspconfig.intelephense.setup {
     };
     files = {
       maxSize = "10000000",
-    }
+    };
 }
 
 lspconfig.sumneko_lua.setup {
