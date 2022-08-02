@@ -23,6 +23,10 @@ sudo apt install -y ./ripgrep.deb
 rg --version
 ```
 
+
+## Install node and nvm
+- https://github.com/nvm-sh/nvm
+
 ## Install plugins
 - Install packer
 - https://github.com/wbthomason/packer.nvim#quickstart
