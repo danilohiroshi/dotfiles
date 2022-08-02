@@ -47,6 +47,9 @@ local lspconfig = require("lspconfig")
 lspconfig.intelephense.setup {
     on_attach = on_attach,
     flags = lsp_flags,
+    environment = {
+      phpVersion = "8.0.21",
+    }
 }
 
 lspconfig.sumneko_lua.setup {
