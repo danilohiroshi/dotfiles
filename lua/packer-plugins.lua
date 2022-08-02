@@ -20,6 +20,7 @@ return require('packer').startup(function()
 
   -- Auto-completion
   use({ "hrsh7th/nvim-cmp"})
+  use({ "hrsh7th/cmp-nvim-lsp"})
 
   -- Status line
   use {
