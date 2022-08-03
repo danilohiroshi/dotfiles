@@ -17,3 +17,15 @@ vim.cmd('set noswapfile')
 
 -- Split right first
 vim.opt.splitright = true
+
+-- Search
+vim.o.incsearch = true
+
+-- Cursor line
+vim.o.cursorline = true
+
+-- Scroll offset
+vim.o.scrolloff = 3
+
+-- Column guide
+vim.o.colorcolumn = '80'
