@@ -19,3 +19,5 @@ require("nvim-tree").setup({
   },
 })
 
+-- Toggle Nvim
+vim.api.nvim_set_keymap("n", "<c-b>", ':NvimTreeToggle<CR>', {noremap=true, silent=true})
