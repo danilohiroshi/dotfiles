@@ -30,4 +30,16 @@ return require('packer').startup(function()
 
   -- Buffer line
   use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
+
+  -- Git integrations
+  use {'lewis6991/gitsigns.nvim'}
+
+  -- File tree
+  use {
+  'kyazdani42/nvim-tree.lua',
+  requires = {
+    'kyazdani42/nvim-web-devicons', -- optional, for file icons
+  },
+  tag = 'nightly' -- optional, updated every week. (see issue #1193)
+}
 end)

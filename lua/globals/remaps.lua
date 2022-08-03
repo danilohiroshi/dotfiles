@@ -21,3 +21,6 @@ vim.api.nvim_set_keymap("n", "<c-w>", ':bdelete<cr>', opts)
 -- Undo
 vim.api.nvim_set_keymap("i", "<c-z>", '<esc>ui', opts)
 vim.api.nvim_set_keymap("n", "<c-z>", 'u', opts)
+
+-- Window split
+

@@ -23,6 +23,12 @@ sudo apt install -y ./ripgrep.deb
 rg --version
 ```
 
+## Install fonts
+```
+mkdir -p ~/.local/share/fonts
+cp fonts/*.ttf ~/.local/share/fonts
+```
+
 ## Install node and nvm
 - https://github.com/nvm-sh/nvm
 
