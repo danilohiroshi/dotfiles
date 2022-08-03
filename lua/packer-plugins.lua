@@ -45,4 +45,7 @@ return require('packer').startup(function()
 
   -- Multicursor
   use {'terryma/vim-multiple-cursors'}
+
+  -- Surround
+  use{'kylechui/nvim-surround'}
 end)
