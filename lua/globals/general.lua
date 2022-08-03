@@ -14,3 +14,6 @@ vim.g.mouse = nicr
 
 -- Disable swapfiles
 vim.cmd('set noswapfile')
+
+-- Split right first
+vim.opt.splitright = true
