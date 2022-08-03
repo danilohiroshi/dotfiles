@@ -48,4 +48,10 @@ return require('packer').startup(function()
 
   -- Surround
   use{'kylechui/nvim-surround'}
+
+  -- Treesitter
+  use {'nvim-treesitter/nvim-treesitter'}
+
+  -- Spell check
+  use {'lewis6991/spellsitter.nvim'}
 end)
