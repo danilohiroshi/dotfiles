@@ -42,11 +42,9 @@ nvim
 :PackerSync
 ```
 
-## Install Intelephense
+## Install LSP
 
 ```bash
 # Open neovim
-nvim
 :LspInstall
-# Select intelephense
 ```

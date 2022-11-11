@@ -6,6 +6,9 @@ require("bufferline").setup {
     left_trunc_marker = 'o',
     right_trunc_marker = 'o',
     modified_icon = '*',
-    indicator_icon = '>',
+    indicator = {
+      style = 'icon',
+      icon = '>',
+    }
   }
 }
