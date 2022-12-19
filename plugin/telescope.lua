@@ -1,3 +1,11 @@
+require('telescope').setup{
+  pickers = {
+    find_files = {
+      theme = "dropdown",
+    }
+  },
+}
+
 -- Open file: Ctrl-p
 vim.api.nvim_set_keymap("n", "<c-p>", ':Telescope find_files<CR>', {noremap=true, silent=true})
 
