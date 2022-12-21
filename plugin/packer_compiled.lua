@@ -115,12 +115,12 @@ _G.packer_plugins = {
     url = "https://github.com/kylechui/nvim-surround"
   },
   ["nvim-web-devicons"] = {
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/dhiroshi/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
+    loaded = true,
+    path = "/home/dhiroshi/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["onedark.nvim"] = {
+    config = { "\27LJ\2\2æ\4\0\0\a\0\24\0X6\0\0\0009\0\1\0'\1\2\0B\0\2\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\5\0005\3\t\0006\4\0\0009\4\3\0049\4\6\4'\5\a\0+\6\2\0B\4\3\0029\4\b\4=\4\n\0036\4\0\0009\4\3\0049\4\6\4'\5\a\0+\6\2\0B\4\3\0029\4\b\4=\4\v\3B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\f\0005\3\15\0006\4\0\0009\4\3\0049\4\6\4'\5\r\0+\6\2\0B\4\3\0029\4\14\4=\4\n\0036\4\0\0009\4\3\0049\4\6\4'\5\16\0+\6\2\0B\4\3\0029\4\b\4=\4\v\3B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\17\0005\3\19\0006\4\0\0009\4\3\0049\4\6\4'\5\18\0+\6\2\0B\4\3\0029\4\b\4=\4\n\0036\4\0\0009\4\3\0049\4\6\4'\5\18\0+\6\2\0B\4\3\0029\4\b\4=\4\v\3B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\20\0005\3\21\0B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\22\0005\3\23\0B\0\4\1K\0\1\0\1\0\1\afg\f#2F313C\24IndentBlanklineChar\1\0\1\afg\f#30323E\25NvimTreeIndentMarker\1\0\0\15CursorLine\17CursorLineBg\15StatusLine\1\0\0\15foreground\fNonText\22StatusLineNonText\abg\afg\1\0\0\15background\16NormalFloat\24nvim_get_hl_by_name\16FloatBorder\16nvim_set_hl\bapi\24colorscheme onedark\bcmd\bvim\0" },
     loaded = true,
     path = "/home/dhiroshi/.local/share/nvim/site/pack/packer/start/onedark.nvim",
     url = "https://github.com/navarasu/onedark.nvim"
@@ -140,15 +140,15 @@ _G.packer_plugins = {
     path = "/home/dhiroshi/.local/share/nvim/site/pack/packer/start/spellsitter.nvim",
     url = "https://github.com/lewis6991/spellsitter.nvim"
   },
+  ["telescope-fzf-native.nvim"] = {
+    loaded = true,
+    path = "/home/dhiroshi/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
+    url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
+  },
   ["telescope-live-grep-args.nvim"] = {
     loaded = true,
     path = "/home/dhiroshi/.local/share/nvim/site/pack/packer/start/telescope-live-grep-args.nvim",
     url = "https://github.com/nvim-telescope/telescope-live-grep-args.nvim"
-  },
-  ["telescope-symbols.nvim"] = {
-    loaded = true,
-    path = "/home/dhiroshi/.local/share/nvim/site/pack/packer/start/telescope-symbols.nvim",
-    url = "https://github.com/nvim-telescope/telescope-symbols.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
@@ -163,6 +163,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: onedark.nvim
+time([[Config for onedark.nvim]], true)
+try_loadstring("\27LJ\2\2æ\4\0\0\a\0\24\0X6\0\0\0009\0\1\0'\1\2\0B\0\2\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\5\0005\3\t\0006\4\0\0009\4\3\0049\4\6\4'\5\a\0+\6\2\0B\4\3\0029\4\b\4=\4\n\0036\4\0\0009\4\3\0049\4\6\4'\5\a\0+\6\2\0B\4\3\0029\4\b\4=\4\v\3B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\f\0005\3\15\0006\4\0\0009\4\3\0049\4\6\4'\5\r\0+\6\2\0B\4\3\0029\4\14\4=\4\n\0036\4\0\0009\4\3\0049\4\6\4'\5\16\0+\6\2\0B\4\3\0029\4\b\4=\4\v\3B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\17\0005\3\19\0006\4\0\0009\4\3\0049\4\6\4'\5\18\0+\6\2\0B\4\3\0029\4\b\4=\4\n\0036\4\0\0009\4\3\0049\4\6\4'\5\18\0+\6\2\0B\4\3\0029\4\b\4=\4\v\3B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\20\0005\3\21\0B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\22\0005\3\23\0B\0\4\1K\0\1\0\1\0\1\afg\f#2F313C\24IndentBlanklineChar\1\0\1\afg\f#30323E\25NvimTreeIndentMarker\1\0\0\15CursorLine\17CursorLineBg\15StatusLine\1\0\0\15foreground\fNonText\22StatusLineNonText\abg\afg\1\0\0\15background\16NormalFloat\24nvim_get_hl_by_name\16FloatBorder\16nvim_set_hl\bapi\24colorscheme onedark\bcmd\bvim\0", "config", "onedark.nvim")
+time([[Config for onedark.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
