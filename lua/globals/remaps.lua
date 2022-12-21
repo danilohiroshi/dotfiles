@@ -1,5 +1,8 @@
 local opts = { noremap=true, silent=true }
 
+-- Ctrl+C for copy
+vim.api.nvim_set_keymap("v", "<c-c>", 'ygv', opts)
+
 -- Ctrl+S for saving
 vim.api.nvim_set_keymap("n", "<c-s>", '<esc>:w<CR>', opts)
 vim.api.nvim_set_keymap("i", "<c-s>", '<esc>:w<CR>i', opts)
