@@ -48,3 +48,10 @@ nvim
 # Open neovim
 :LspInstall
 ```
+
+## Install Kitty terminal
+```bash
+sudo apt install kitty
+mkdir -p ~/.config/kitty
+cp kitty/* ~/.config/kitty
+```
