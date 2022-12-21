@@ -6,6 +6,6 @@ require'FTerm'.setup({
   },
 })
 
--- Example keybindings
+-- Keybindings
 vim.keymap.set('n', '<c-t>', '<CMD>lua require("FTerm").toggle()<CR>')
 vim.keymap.set('t', '<c-t>', '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
