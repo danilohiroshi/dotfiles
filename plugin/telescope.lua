@@ -62,3 +62,6 @@ vim.api.nvim_set_keymap("n", "<c-e>", ':Telescope oldfiles<CR>', {noremap=true, 
 
 -- Git status
 vim.api.nvim_set_keymap("n", "<c-g>", ':Telescope git_status<CR>', {noremap=true, silent=true})
+
+-- Find symbols
+vim.keymap.set('n', '<c-r>', [[<cmd>lua require('telescope.builtin').lsp_document_symbols()<CR>]])
