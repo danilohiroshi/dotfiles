@@ -45,11 +45,35 @@ return require('packer').startup(function()
   })
 
   -- LSP
-	use({ "neovim/nvim-lspconfig"}) -- enable LSP
+  use({
+    'neovim/nvim-lspconfig',
+    requires = {
+      'b0o/schemastore.nvim',
+      'folke/lsp-colors.nvim',
+    }
+  })
 
   -- Auto-completion
-  use({ "hrsh7th/nvim-cmp"})
-  use({ "hrsh7th/cmp-nvim-lsp"})
+  use({
+    'hrsh7th/nvim-cmp',
+    requires = {
+      'L3MON4D3/LuaSnip',
+      'hrsh7th/cmp-buffer',
+      'hrsh7th/cmp-cmdline',
+      'hrsh7th/cmp-nvim-lsp',
+      'hrsh7th/cmp-nvim-lsp-signature-help',
+      'hrsh7th/cmp-nvim-lua',
+      'jessarcher/cmp-path',
+      'onsails/lspkind-nvim',
+      'saadparwaiz1/cmp_luasnip',
+    }
+  })
+
+  -- Code Actions
+  use({
+    'weilbith/nvim-code-action-menu',
+    cmd = 'CodeActionMenu',
+  })
 
   -- Status line
   use {
@@ -71,6 +95,19 @@ return require('packer').startup(function()
 
   -- Terminal
   use "numToStr/FTerm.nvim"
+
+  -- Pair
+  use({
+    'windwp/nvim-autopairs',
+    config = function()
+      require('nvim-autopairs').setup()
+    end,
+  })
+
+  -- Snippets
+  use({
+    'L3MON4D3/LuaSnip',
+  })
 
   -- Others
   use('tpope/vim-commentary')
