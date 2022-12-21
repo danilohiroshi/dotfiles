@@ -32,6 +32,13 @@ cp fonts/*.ttf ~/.local/share/fonts
 ## Install node and nvm
 - https://github.com/nvm-sh/nvm
 
+## Install Kitty terminal
+```bash
+sudo apt install kitty
+mkdir -p ~/.config/kitty
+cp kitty/* ~/.config/kitty
+```
+
 ## Install plugins
 - Install packer
 - https://github.com/wbthomason/packer.nvim#quickstart
@@ -47,11 +54,4 @@ nvim
 ```bash
 # Open neovim
 :LspInstall
-```
-
-## Install Kitty terminal
-```bash
-sudo apt install kitty
-mkdir -p ~/.config/kitty
-cp kitty/* ~/.config/kitty
 ```
