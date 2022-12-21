@@ -83,18 +83,27 @@ require('lspconfig').html.setup({
 })
 
 require('lspconfig').intelephense.setup({
-  on_attach = function(client, bufnr)
-    on_attach(client, bufnr)
-    client.server_capabilities.documentFormattingProvider = false
-    client.server_capabilities.documentRangeFormattingProvider = false
-  end,
+  on_attach = on_attach,
   capabilities = capabilities,
-  environment = {
-    phpVersion = "8.0.21",
-  };
-  files = {
-    maxSize = "10000000",
-  };
+  settings = {
+    intelephense = {
+      files = {
+        maxSize = "10000000000",
+        associations = {
+          "*.php",
+          "*.phtml",
+          "*.inc",
+          "*.module",
+          "*.install",
+          "*.theme"
+        }
+      }
+    }
+  }
+})
+
+require("nvim-lsp-installer").setup({
+  automatic_installation = true, -- automatically detect which servers to install (based on which servers are set up via lspconfig)
 })
 
 -- require'lspconfig'.phpactor.setup{

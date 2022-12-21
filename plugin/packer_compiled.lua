@@ -163,6 +163,11 @@ _G.packer_plugins = {
     path = "/home/dhiroshi/.local/share/nvim/site/pack/packer/opt/nvim-code-action-menu",
     url = "https://github.com/weilbith/nvim-code-action-menu"
   },
+  ["nvim-lsp-installer"] = {
+    loaded = true,
+    path = "/home/dhiroshi/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
+    url = "https://github.com/williamboman/nvim-lsp-installer"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/dhiroshi/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
