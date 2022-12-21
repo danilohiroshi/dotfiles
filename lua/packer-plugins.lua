@@ -63,9 +63,6 @@ return require('packer').startup(function()
   -- Multicursor
   use {'terryma/vim-multiple-cursors'}
 
-  -- Surround
-  use{'kylechui/nvim-surround'}
-
   -- Spell check
   use {'lewis6991/spellsitter.nvim'}
 
@@ -74,4 +71,12 @@ return require('packer').startup(function()
 
   -- Terminal
   use "numToStr/FTerm.nvim"
+
+  -- Others
+  use('tpope/vim-commentary')
+  use('tpope/vim-repeat')
+  use('tpope/vim-surround')
+  use('tpope/vim-eunuch') -- Adds :Rename, :SudoWrite
+  use('tpope/vim-unimpaired') -- Adds [b and other handy mappings
+  use('tpope/vim-sleuth') -- Indent autodetection with editorconfig support
 end)
