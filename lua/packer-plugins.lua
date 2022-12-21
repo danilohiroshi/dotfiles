@@ -40,4 +40,7 @@ return require('packer').startup(function()
 
   -- Git diff view
   use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
+
+  -- Terminal
+  use "numToStr/FTerm.nvim"
 end)
