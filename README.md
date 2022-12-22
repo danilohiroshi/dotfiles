@@ -29,6 +29,8 @@ cd ~/.config/nvim
 mkdir -p ~/.local/share/fonts
 cp fonts/*.ttf ~/.local/share/fonts
 ```
+## Install php
+- https://www.php.net/downloads
 
 ## Install node and nvm
 - https://github.com/nvm-sh/nvm
