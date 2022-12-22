@@ -32,9 +32,10 @@ cp fonts/*.ttf ~/.local/share/fonts
 ## Install php
 - https://www.php.net/downloads
 
-## Install node and nvm
+## Install nvm, node and language servers
 - https://github.com/nvm-sh/nvm
 - install typescript server ```nvm exec 14 npm install -g typescript typescript-language-server```
+- install intelephense ```nvm exec 14 npm install -g intelephense```
 
 ## Install Kitty terminal
 ```bash
