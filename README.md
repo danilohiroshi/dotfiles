@@ -56,6 +56,8 @@ nvim
 ## Install LSP
 
 ```bash
-# Open neovim
-:LspInstall
+# Open neovim in a php
+:LspInstall intelephense
+:LspInstall typescript
+# option: tsserver
 ```
