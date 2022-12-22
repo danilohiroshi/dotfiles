@@ -25,6 +25,7 @@ rg --version
 
 ## Install fonts
 ```
+cd ~/.config/nvim
 mkdir -p ~/.local/share/fonts
 cp fonts/*.ttf ~/.local/share/fonts
 ```
