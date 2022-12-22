@@ -31,6 +31,7 @@ cp fonts/*.ttf ~/.local/share/fonts
 
 ## Install node and nvm
 - https://github.com/nvm-sh/nvm
+- install typescript server ```nvm exec 14 npm install -g typescript```
 
 ## Install Kitty terminal
 ```bash
