@@ -1,3 +1,10 @@
+## Install git
+```basg
+sudo apt install git
+git config --global  user.email "example@example.com"
+git config --global  user.name "Example"
+```
+
 ## Install Neovim
 
 ```bash
