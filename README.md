@@ -25,10 +25,22 @@ rg --version
 
 ## Install fonts
 ```
-cd ~/.config/nvim
 mkdir -p ~/.local/share/fonts
-cp fonts/*.ttf ~/.local/share/fonts
+cp ~/.config/nvim/fonts/*.ttf ~/.local/share/fonts
 ```
+
+## Install ZSH
+```
+sudo apt install zsh -y
+```
+
+## Install Oh-my-zsh
+- https://ohmyz.sh/#install
+- Copy config
+```
+cp ~/.config/nvim/zsh/.zshrc ~/
+```
+
 ## Install php
 - https://www.php.net/downloads
 
@@ -41,7 +53,7 @@ cp fonts/*.ttf ~/.local/share/fonts
 ```bash
 sudo apt install kitty
 mkdir -p ~/.config/kitty
-cp kitty/* ~/.config/kitty
+cp ~/.config/nvim/kitty/* ~/.config/kitty
 ```
 
 ## Install plugins
