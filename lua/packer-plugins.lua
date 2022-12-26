@@ -32,6 +32,15 @@ return require('packer').startup(function()
     end,
   })
 
+  use({
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate',
+    requires = {
+      'nvim-treesitter/playground',
+      'nvim-treesitter/nvim-treesitter-textobjects',
+    }
+  })
+
   -- Telescope
   -- Dependency, install https://lindevs.com/install-ripgrep-on-ubuntu/
   use({
