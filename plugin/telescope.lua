@@ -73,15 +73,24 @@ require('telescope').load_extension('live_grep_args')
 -- Open file: Ctrl-p
 vim.api.nvim_set_keymap("n", "<c-p>", ':Telescope find_files<CR>', {noremap=true, silent=true})
 vim.api.nvim_set_keymap("v", "<c-p>", 'y<esc>:Telescope find_files<CR>', {noremap=true, silent=true})
+vim.api.nvim_set_keymap("i", "<c-p>", 'y<esc>:Telescope find_files<CR>', {noremap=true, silent=true})
 
 -- Global Search: Ctrl-Shift-f
 vim.api.nvim_set_keymap("n", "<C-f>", ':Telescope live_grep<CR>', {noremap=true, silent=true})
+vim.api.nvim_set_keymap("v", "<C-f>", '<esc>:Telescope live_grep<CR>', {noremap=true, silent=true})
+vim.api.nvim_set_keymap("i", "<C-f>", '<esc>:Telescope live_grep<CR>', {noremap=true, silent=true})
 
 -- Open Old files
 vim.api.nvim_set_keymap("n", "<c-e>", ':Telescope oldfiles<CR>', {noremap=true, silent=true})
+vim.api.nvim_set_keymap("v", "<c-e>", '<esc>:Telescope oldfiles<CR>', {noremap=true, silent=true})
+vim.api.nvim_set_keymap("i", "<c-e>", '<esc>:Telescope oldfiles<CR>', {noremap=true, silent=true})
 
 -- Git status
 vim.api.nvim_set_keymap("n", "<c-g>", ':Telescope git_status<CR>', {noremap=true, silent=true})
+vim.api.nvim_set_keymap("v", "<c-g>", '<esc>:Telescope git_status<CR>', {noremap=true, silent=true})
+vim.api.nvim_set_keymap("i", "<c-g>", '<esc>:Telescope git_status<CR>', {noremap=true, silent=true})
 
 -- Find symbols
 vim.keymap.set('n', '<c-r>', [[<cmd>lua require('telescope.builtin').lsp_document_symbols()<CR>]])
+vim.keymap.set('v', '<c-r>', [[<cmd>lua require('telescope.builtin').lsp_document_symbols()<CR>]])
+vim.keymap.set('i', '<c-r>', [[<cmd>lua require('telescope.builtin').lsp_document_symbols()<CR>]])
