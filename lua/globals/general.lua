@@ -1,17 +1,17 @@
 -- Enable relative numbers
-vim.o.number = true
-vim.o.relativenumber = true
+vim.opt.number = true
+vim.opt.relativenumber = true
 
 -- Yank to system Clipboard
-vim.o.clipboard = 'unnamedplus'
+vim.opt.clipboard = 'unnamedplus'
 
 -- Convert tabs to space
-vim.o.expandtab = true
+vim.opt.expandtab = true
 
 -- tabsize = 2
-vim.o.tabstop = 2
-vim.o.shiftwidth = 2
-vim.o.softtabstop = 2
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.softtabstop = 2
 
 -- Indentation
 vim.opt.smartindent = true
@@ -27,16 +27,16 @@ vim.g.mouse = nicr
 vim.opt.splitright = true
 
 -- Search
-vim.o.incsearch = true
+vim.opt.incsearch = true
 
 -- Cursor line
-vim.o.cursorline = true
+vim.opt.cursorline = true
 
 -- Scroll offset
-vim.o.scrolloff = 5
+vim.opt.scrolloff = 5
 
 -- Column guide
-vim.o.colorcolumn = '80'
+vim.opt.colorcolumn = '80'
 
 -- Case sensitive automatically
 vim.opt.ignorecase = true
