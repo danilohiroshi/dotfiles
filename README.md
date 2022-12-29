@@ -93,4 +93,7 @@ nvim
 ```
 :TSInstall php
 :TSInstall javascript
+:TSInstall typescript
+:TSInstall css
+:TSInstall yaml
 ```
