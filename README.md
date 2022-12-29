@@ -31,6 +31,11 @@ sudo apt install -y ./ripgrep.deb
 rg --version
 ```
 
+## Install build-essential
+```
+sudo apt install build-essential
+```
+
 ## Install fonts
 ```
 mkdir -p ~/.local/share/fonts
@@ -82,4 +87,10 @@ nvim
 :LspInstall intelephense
 :LspInstall typescript
 # option: tsserver
+```
+
+## Install language parser
+```
+:TSInstall php
+:TSInstall javascript
 ```
