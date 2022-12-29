@@ -58,6 +58,10 @@ return require('packer').startup(function()
     'weilbith/nvim-code-action-menu',
     cmd = 'CodeActionMenu',
   })
+  use {
+    'kosayoda/nvim-lightbulb',
+    requires = 'antoinemadec/FixCursorHold.nvim',
+  }
 
   -- Status line
   use {

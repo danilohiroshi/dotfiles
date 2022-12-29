@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["FixCursorHold.nvim"] = {
+    loaded = true,
+    path = "/home/dhiroshi/.local/share/nvim/site/pack/packer/start/FixCursorHold.nvim",
+    url = "https://github.com/antoinemadec/FixCursorHold.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "/home/dhiroshi/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -168,6 +173,11 @@ _G.packer_plugins = {
     only_cond = false,
     path = "/home/dhiroshi/.local/share/nvim/site/pack/packer/opt/nvim-code-action-menu",
     url = "https://github.com/weilbith/nvim-code-action-menu"
+  },
+  ["nvim-lightbulb"] = {
+    loaded = true,
+    path = "/home/dhiroshi/.local/share/nvim/site/pack/packer/start/nvim-lightbulb",
+    url = "https://github.com/kosayoda/nvim-lightbulb"
   },
   ["nvim-lsp-installer"] = {
     loaded = true,
