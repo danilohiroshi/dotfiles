@@ -9,7 +9,8 @@ db.custom_center = {
   { icon = '  ', shortcut = 'Ctrl+p', desc = 'Find file                 ', action = 'Telescope find_files' },
   { icon = '  ', shortcut = 'Ctrl+e', desc = 'Recent files              ', action = 'Telescope oldfiles' },
   { icon = '  ', shortcut = 'Ctrl+f', desc = 'Find Word                 ', action = 'Telescope live_grep' },
-  { icon = 'פּ  ', shortcut = 'Ctrl+b', desc = 'Toogle File tree          ', action = 'NvimTreeFindFileToggle' },
+  { icon = 'פּ  ', shortcut = 'Ctrl+b', desc = 'File tree                 ', action = 'NvimTreeFindFileToggle' },
+  { icon = ' ', shortcut = 'Ctrl+t', desc = 'Terminal                   ', action = 'FloatermToggle scratch' },
 }
 
 db.custom_footer = { '' }
