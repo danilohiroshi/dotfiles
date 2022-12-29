@@ -41,6 +41,7 @@ cp ~/.config/nvim/fonts/*.ttf ~/.local/share/fonts
 ```
 sudo apt install zsh -y
 ```
+- In ~/.bashrc, add "exec zsh"
 
 ## Install Oh-my-zsh
 - https://ohmyz.sh/#install
