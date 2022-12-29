@@ -133,6 +133,11 @@ return require('packer').startup(function()
   
   -- Dashboard
   use('glepnir/dashboard-nvim')
+  
+  -- Highlight current word
+  use {
+    'RRethy/vim-illuminate'
+  }
 
   -- Doc block
   use {
