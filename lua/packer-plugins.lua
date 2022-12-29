@@ -100,4 +100,24 @@ return require('packer').startup(function()
   use('tpope/vim-eunuch') -- Adds :Rename, :SudoWrite
   use('tpope/vim-unimpaired') -- Adds [b and other handy mappings
   use('tpope/vim-sleuth') -- Indent autodetection with editorconfig support
+
+  -- Git integration
+  use({
+    'tpope/vim-fugitive',
+    requires = 'tpope/vim-rhubarb',
+    cmd = 'G',
+  })
+  use({
+    'lewis6991/gitsigns.nvim',
+    requires = 'nvim-lua/plenary.nvim',
+    config = function()
+      require('gitsigns').setup({
+        sign_priority = 20,
+        on_attach = function(bufnr)
+          vim.keymap.set('n', ']h', "&diff ? ']c' : '<cmd>Gitsigns next_hunk<CR>'", { expr = true, buffer = bufnr })
+          vim.keymap.set('n', '[h', "&diff ? '[c' : '<cmd>Gitsigns prev_hunk<CR>'", { expr = true, buffer = bufnr })
+        end,
+      })
+    end,
+  })
 end)
