@@ -11,3 +11,5 @@ require('onedark').setup {
     TelescopeBorder = { fg =  '$myBorder', fmt = "bold" },
   }
 }
+
+vim.cmd('colorscheme onedark')

@@ -78,7 +78,7 @@ return require('packer').startup(function()
   use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
 
   -- Terminal
-  use "numToStr/FTerm.nvim"
+  use "voldikss/vim-floaterm"
 
   -- Pair
   use({
