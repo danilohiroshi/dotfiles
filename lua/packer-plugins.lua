@@ -121,8 +121,12 @@ return require('packer').startup(function()
     end,
   })
 
+  -- File tree
   use({
     'kyazdani42/nvim-tree.lua',
     requires = 'kyazdani42/nvim-web-devicons',
   })
+  
+  -- Dashboard
+  use('glepnir/dashboard-nvim')
 end)
