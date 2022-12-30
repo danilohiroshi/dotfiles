@@ -55,6 +55,12 @@ sudo apt install zsh -y
 cp ~/.config/nvim/zsh/.zshrc ~/
 ```
 
+## Install xclip
+- Only if using X11
+```
+sudo apt install xclip
+```
+
 ## Install php
 - https://www.php.net/downloads
 
