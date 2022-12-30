@@ -149,4 +149,6 @@ return require('packer').startup(function()
     -- Uncomment next line if you want to follow only stable versions
     -- tag = "*"
   }
+
+  use {'karb94/neoscroll.nvim'}
 end)
