@@ -3,7 +3,7 @@
 sudo apt install git
 git config --global  user.email "example@example.com"
 git config --global  user.name "Example"
-git config --global credential.helper cache
+git config --global credential.helper "cache --timeout=43200"
 ```
 
 ## Install Neovim
