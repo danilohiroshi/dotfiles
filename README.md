@@ -72,8 +72,6 @@ sudo apt install xclip
 
 ## Install nvm, node and language servers
 - https://github.com/nvm-sh/nvm
-- install typescript server ```nvm exec 14 npm install -g typescript typescript-language-server```
-- install intelephense ```nvm exec 14 npm install -g intelephense```
 
 ## Install Linters
 - jshint: ```npm install -g jshint```
@@ -122,3 +120,11 @@ nvim
 - ```:Mason```
 - Select "(3) DAP"
 - Press "i" to install a adapter
+
+# Install LSP clients
+- Enter nvim
+- ```:Mason```
+- Select "(2) LSP"
+- Press "i" to install the clients
+- PHP: intelephense
+- Typescript: typescript-language-server
