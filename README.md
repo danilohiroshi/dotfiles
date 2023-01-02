@@ -69,6 +69,11 @@ sudo apt install xclip
 - install typescript server ```nvm exec 14 npm install -g typescript typescript-language-server```
 - install intelephense ```nvm exec 14 npm install -g intelephense```
 
+## Install Linters
+- jshint: ```npm install -g jshint```
+- phpcs, Drupal: https://www.drupal.org/docs/contributed-modules/code-review-module/installing-coder-sniffer
+- Supported linters: https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
+
 ## Install Kitty terminal
 ```bash
 sudo apt install kitty

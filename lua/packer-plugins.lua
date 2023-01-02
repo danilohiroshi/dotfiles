@@ -150,5 +150,9 @@ return require('packer').startup(function()
     -- tag = "*"
   }
 
+  -- Smooth scroll
   use {'karb94/neoscroll.nvim'}
+
+  -- Linters
+  use {'jose-elias-alvarez/null-ls.nvim'}
 end)
