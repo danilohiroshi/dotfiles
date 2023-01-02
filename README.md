@@ -71,6 +71,7 @@ sudo apt install xclip
 
 ## Install Linters
 - jshint: ```npm install -g jshint```
+- prettier: ```npm install -g prettier```
 - phpcs, Drupal: https://www.drupal.org/docs/contributed-modules/code-review-module/installing-coder-sniffer
 - Supported linters: https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
 
