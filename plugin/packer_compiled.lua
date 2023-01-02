@@ -205,11 +205,6 @@ _G.packer_plugins = {
     path = "/home/dhiroshi/.local/share/nvim/site/pack/packer/start/nvim-lightbulb",
     url = "https://github.com/kosayoda/nvim-lightbulb"
   },
-  ["nvim-lsp-installer"] = {
-    loaded = true,
-    path = "/home/dhiroshi/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
-    url = "https://github.com/williamboman/nvim-lsp-installer"
-  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/dhiroshi/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",

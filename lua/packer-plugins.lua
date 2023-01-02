@@ -33,7 +33,7 @@ return require('packer').startup(function()
     requires = {
       'b0o/schemastore.nvim',
       'folke/lsp-colors.nvim',
-      'williamboman/nvim-lsp-installer',
+      -- 'williamboman/nvim-lsp-installer',
     }
   })
 

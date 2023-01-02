@@ -97,15 +97,6 @@ nvim
 :PackerSync
 ```
 
-## Install LSP
-
-```bash
-# Open neovim in a php
-:LspInstall intelephense
-:LspInstall typescript
-# option: tsserver
-```
-
 ## Install language parser
 ```
 :TSInstall php

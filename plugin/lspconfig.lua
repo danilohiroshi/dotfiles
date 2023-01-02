@@ -69,10 +69,6 @@ require('lspconfig').intelephense.setup({
 
 require('lspconfig').tsserver.setup({})
 
-require("nvim-lsp-installer").setup({
-  automatic_installation = true, -- automatically detect which servers to install (based on which servers are set up via lspconfig)
-})
-
 vim.fn.sign_define('DiagnosticSignError', { text = '', texthl = 'DiagnosticSignError' })
 vim.fn.sign_define('DiagnosticSignWarn', { text = '', texthl = 'DiagnosticSignWarn' })
 vim.fn.sign_define('DiagnosticSignInfo', { text = '', texthl = 'DiagnosticSignInfo' })
