@@ -53,7 +53,7 @@ telescope.setup({
       hidden = true,
     },
     buffers = {
-      previewer = false,
+      previewer = true,
       layout_config = {
         width = 80,
       },
@@ -62,7 +62,7 @@ telescope.setup({
       prompt_title = 'History',
     },
     lsp_references = {
-      previewer = false,
+      previewer = true,
     },
   },
 })
