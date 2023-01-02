@@ -115,3 +115,9 @@ nvim
 :TSInstall css
 :TSInstall yaml
 ```
+
+## Debuggers
+- Enter nvim
+- ```:Mason```
+- Select "(3) DAP"
+- Press "i" to install a adapter

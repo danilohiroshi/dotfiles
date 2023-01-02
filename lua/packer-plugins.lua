@@ -152,4 +152,14 @@ return require('packer').startup(function()
 
   -- Linters
   use {'jose-elias-alvarez/null-ls.nvim'}
+
+  -- Debugger
+  use {
+    "rcarriga/nvim-dap-ui",
+    requires = {"mfussenegger/nvim-dap"}
+  }
+
+  -- Mason
+  use { "williamboman/mason.nvim" }
+
 end)
