@@ -6,7 +6,12 @@ null_ls.setup({
       null_ls.builtins.diagnostics.jshint,
       null_ls.builtins.diagnostics.tsc,
       null_ls.builtins.formatting.prettier,
-      -- null_ls.builtins.diagnostics.phpcs,
+      null_ls.builtins.diagnostics.phpcs.with({
+        extra_args = {
+            "--standard=Drupal,DrupalPractice",
+            "--extensions=php,module,inc,install,test,profile,theme,css,info,txt,md,yml",
+          }
+      }),
     },
 })
 

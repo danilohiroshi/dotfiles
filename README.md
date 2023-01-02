@@ -63,6 +63,11 @@ sudo apt install xclip
 
 ## Install php
 - https://www.php.net/downloads
+- Install php-curl ```sudo apt install php-curl```
+
+## Install composer
+- https://getcomposer.org/download/
+- In ~/.bashrc add ```export PATH="$HOME/.config/composer/vendor/bin:$PATH"```
 
 ## Install nvm, node and language servers
 - https://github.com/nvm-sh/nvm
