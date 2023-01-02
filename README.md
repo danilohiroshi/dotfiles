@@ -37,6 +37,7 @@ sudo apt install build-essential
 ```
 
 ## Install fonts
+- Font: https://www.nerdfonts.com/cheat-sheet
 ```
 mkdir -p ~/.local/share/fonts
 cp ~/.config/nvim/fonts/*.ttf ~/.local/share/fonts
