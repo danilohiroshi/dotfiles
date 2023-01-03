@@ -1,9 +1,8 @@
 
--- Colors: https://github.com/navarasu/onedark.nvim/blob/master/lua/onedark/palette.lua
-
 require('onedark').setup {
   colors = {
     myBorder = '#31353f',
+    contextColor = '#61afef'
   },
   highlights = {
     TelescopePromptBorder = { fg =  '$myBorder', fmt = "bold" },
@@ -11,6 +10,7 @@ require('onedark').setup {
     TelescopePreviewBorder = { fg =  '$myBorder', fmt = "bold" },
     TelescopeBorder = { fg =  '$myBorder', fmt = "bold" },
     IndentBlanklineChar = { fg =  '$myBorder', fmt = "bold" },
+    IndentBlanklineContextChar = { fg =  '$contextColor', fmt = "nocombine" },
   }
 }
 
