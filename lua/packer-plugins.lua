@@ -173,4 +173,7 @@ return require('packer').startup(function()
 
   -- Better quickfix
   use {'kevinhwang91/nvim-bqf'}
+
+  -- Scrollbar
+  use("petertriho/nvim-scrollbar")
 end)
