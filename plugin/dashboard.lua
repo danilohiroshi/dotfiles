@@ -6,12 +6,13 @@ db.custom_header = {
 
 db.custom_center = {
   { icon = '  ', desc = 'New file                       ', action = 'enew' },
-  { icon = '  ', shortcut = 'Ctrl+p', desc = 'Find file                 ', action = 'Telescope find_files' },
-  { icon = '  ', shortcut = 'Ctrl+e', desc = 'Recent files              ', action = 'Telescope oldfiles' },
-  { icon = '  ', shortcut = 'Ctrl+f', desc = 'Find Word                 ', action = 'Telescope live_grep' },
-  { icon = 'פּ  ', shortcut = 'Ctrl+b', desc = 'File tree                 ', action = 'NvimTreeFindFileToggle' },
-  { icon = '  ', shortcut = 'Ctrl+t', desc = 'Terminal                  ', action = 'FloatermToggle scratch' },
-  { icon = '  ', shortcut = 'Ctrl+g', desc = 'Git status                ', action = 'FloatermToggle scratch' },
+  { icon = '  ', shortcut = 'Ctrl+p',  desc = 'Find file                 ', action = 'Telescope find_files' },
+  { icon = '  ', shortcut = 'Ctrl+e',  desc = 'Recent files              ', action = 'Telescope oldfiles' },
+  { icon = '  ', shortcut = 'Ctrl+f',  desc = 'Find Word                 ', action = 'Telescope live_grep' },
+  { icon = 'פּ  ', shortcut = 'Ctrl+b',  desc = 'File tree                 ', action = 'NvimTreeFindFileToggle' },
+  { icon = '  ', shortcut = 'Ctrl+t',  desc = 'Terminal                  ', action = 'FloatermToggle scratch' },
+  { icon = '  ', shortcut = 'Ctrl+g',  desc = 'Git status                ', action = 'FloatermToggle scratch' },
+  { icon = '﬘  ', shortcut = 'Tab+Tab', desc = 'Tab navigation            ', action = 'Telescope buffers' },
 }
 
 db.custom_footer = { '' }
