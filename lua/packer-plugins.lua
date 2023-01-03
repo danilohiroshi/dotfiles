@@ -165,9 +165,12 @@ return require('packer').startup(function()
   -- Indent guide
   use { 'lukas-reineke/indent-blankline.nvim' }
 
+  -- Show file errors (Linters, LSP)
   use {
     "folke/trouble.nvim",
     requires = "kyazdani42/nvim-web-devicons"
   }
 
+  -- Better quickfix
+  use {'kevinhwang91/nvim-bqf'}
 end)
