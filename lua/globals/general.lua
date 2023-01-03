@@ -33,7 +33,8 @@ vim.opt.incsearch = true
 vim.opt.cursorline = true
 
 -- Scroll offset
-vim.opt.scrolloff = 5
+vim.opt.scrolloff = 8
+vim.opt.sidescrolloff = 8
 
 -- Column guide
 vim.opt.colorcolumn = '80'
