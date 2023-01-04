@@ -179,4 +179,7 @@ return require('packer').startup(function()
   
   -- Which key
   use("folke/which-key.nvim")
+  
+  -- Buffer management
+  use("kazhala/close-buffers.nvim")
 end)
