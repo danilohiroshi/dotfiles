@@ -1,15 +1,27 @@
+-- Color Pallete: https://github.com/navarasu/onedark.nvim/blob/master/lua/onedark/palette.lua
 
 require('onedark').setup {
   colors = {
-    myBorder = '#31353f',
-    contextColor = '#61afef'
+    indentLine = '#31353f',
+    contextColor = '#61afef',
+    background = '#282c34',
+    background_light = '#31353f',
+    lightgrey = '#c4c4c4',
   },
   highlights = {
-    TelescopePromptBorder = { fg =  '$myBorder', fmt = "bold" },
-    TelescopeResultsBorder = { fg =  '$myBorder', fmt = "bold" },
-    TelescopePreviewBorder = { fg =  '$myBorder', fmt = "bold" },
-    TelescopeBorder = { fg =  '$myBorder', fmt = "bold" },
-    IndentBlanklineChar = { fg =  '$myBorder', fmt = "bold" },
+    -- Telescope
+    TelescopeNormal = { fg =  '$lightgrey' },
+    TelescopePromptNormal = { fg =  '$lightgrey' },
+    TelescopePreviewNormal = { fg =  '$lightgrey' },
+    TelescopeResultsNormal = { fg =  '$lightgrey' },
+
+    TelescopeBorder = { fg =  '$background' },
+    TelescopePreviewBorder = { fg =  '$background' },
+    TelescopePromptBorder = { fg =  '$background' },
+    TelescopeResultsBorder = { fg =  '$background' },
+
+    -- Indentation
+    IndentBlanklineChar = { fg =  '$indentLine', fmt = "bold" },
     IndentBlanklineContextChar = { fg =  '$contextColor', fmt = "nocombine" },
   }
 }

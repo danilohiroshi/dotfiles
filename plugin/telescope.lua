@@ -6,8 +6,10 @@ vim.cmd([[
   highlight link TelescopePromptTitle PMenuSel
   highlight link TelescopePreviewTitle PMenuSel
   highlight link TelescopePromptNormal NormalFloat
-  highlight link TelescopePromptBorder FloatBorder
+  highlight link TelescopeResultsNormal NormalFloat
   highlight link TelescopeNormal CursorLine
+  highlight link TelescopePromptBorder FloatBorder
+  highlight link TelescopeResultsBorder FloatBorder
   highlight link TelescopeBorder CursorLineBg
 ]])
 
