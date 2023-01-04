@@ -17,7 +17,7 @@ vim.opt.softtabstop = 2
 vim.opt.smartindent = true
 
 -- Line wrap
-vim.opt.wrap = false
+vim.opt.wrap = true
 
 -- Enable mouse
 vim.g.mouse = a
@@ -45,7 +45,7 @@ vim.opt.smartcase = true
 
 -- Complete the longest common match, and allow tabbing the results to fully complete them
 vim.opt.wildmode = 'longest:full,full'
-
+vim.opt.completeopt = 'menuone,longest,preview'
 
 -- Ask to save when exit
 vim.opt.confirm = true
@@ -54,6 +54,8 @@ vim.opt.confirm = true
 vim.opt.undofile = true
 vim.opt.backup = true
 vim.opt.backupdir:remove('.')
+
+vim.opt.termguicolors = true
 
 -- Disable swapfiles
 vim.cmd('set noswapfile')
