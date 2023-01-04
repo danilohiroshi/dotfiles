@@ -176,4 +176,7 @@ return require('packer').startup(function()
 
   -- Scrollbar
   use("petertriho/nvim-scrollbar")
+  
+  -- Which key
+  use("folke/which-key.nvim")
 end)
