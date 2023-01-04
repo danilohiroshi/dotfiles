@@ -1,5 +1,9 @@
 local opts = { noremap=true, silent=true }
 
+-- Space is my leader.
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
+
 -- Copy and Paste
 vim.api.nvim_set_keymap("v", "<c-c>", '"+ygv', opts)
 vim.api.nvim_set_keymap("i", "<c-v>", '<esc>"+p', opts)
@@ -25,8 +29,8 @@ vim.api.nvim_set_keymap("n", "<c-d>", '<S-v>yp', opts)
 vim.api.nvim_set_keymap("v", "<c-d>", 'ygv<esc>p', opts)
 
 -- Clear highlighting
-vim.api.nvim_set_keymap("v", "<Space>", '<esc>:noh<CR>', opts)
-vim.api.nvim_set_keymap("n", "<Space>", '<esc>:noh<CR>', opts)
+vim.api.nvim_set_keymap("v", "<Leader><Leader>", '<esc>:noh<CR>', opts)
+vim.api.nvim_set_keymap("n", "<Leader><Leader>", '<esc>:noh<CR>', opts)
 
 -- Close buffer
 vim.api.nvim_set_keymap("n", "<c-w>", ':bdelete<cr>', opts)
