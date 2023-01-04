@@ -10,7 +10,7 @@ db.custom_center = {
   { icon = '  ', shortcut = 'Ctrl+e',  desc = 'Recent files              ', action = 'Telescope oldfiles' },
   { icon = '  ', shortcut = 'Ctrl+f',  desc = 'Find Word                 ', action = 'Telescope live_grep' },
   { icon = 'פּ  ', shortcut = 'Ctrl+b',  desc = 'File tree                 ', action = 'NvimTreeFindFileToggle' },
-  { icon = '  ', shortcut = 'Ctrl+t',  desc = 'Terminal                  ', action = 'FloatermToggle scratch' },
+  { icon = '  ', shortcut = 'F10',     desc = 'Terminal                  ', action = 'FloatermToggle scratch' },
   { icon = '  ', shortcut = 'Ctrl+g',  desc = 'Git status                ', action = 'FloatermToggle scratch' },
   { icon = '﬘  ', shortcut = 'Tab+Tab', desc = 'Tab navigation            ', action = 'Telescope buffers' },
 }
