@@ -10,10 +10,10 @@ require('onedark').setup {
   },
   highlights = {
     -- Telescope
-    TelescopeNormal = { fg =  '$lightgrey' },
-    TelescopePromptNormal = { fg =  '$lightgrey' },
-    TelescopePreviewNormal = { fg =  '$lightgrey' },
-    TelescopeResultsNormal = { fg =  '$lightgrey' },
+    -- TelescopeNormal = { fg =  '$lightgrey' },
+    -- TelescopePromptNormal = { fg =  '$lightgrey' },
+    -- TelescopePreviewNormal = { fg =  '$lightgrey' },
+    -- TelescopeResultsNormal = { fg =  '$lightgrey' },
 
     TelescopeBorder = { fg =  '$background' },
     TelescopePreviewBorder = { fg =  '$background' },
