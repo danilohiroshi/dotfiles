@@ -10,3 +10,8 @@ local opts = { noremap=true, silent=true }
 vim.api.nvim_set_keymap("n", "<Leader>wo", ':BDelete other<cr>', opts)
 vim.api.nvim_set_keymap("i", "<Leader>wo", '<esc>:BDelete other<cr>', opts)
 vim.api.nvim_set_keymap("v", "<Leader>wo", '<esc>:BDelete other<cr>', opts)
+
+-- Close buffer
+vim.api.nvim_set_keymap("n", "<Leader>ww", ':bdelete<cr>', opts)
+vim.keymap.set('v', '<Leader>ww', "<esc>:bd<CR>")
+vim.keymap.set('i', '<Leader>ww', "<esc>:bd<CR>")

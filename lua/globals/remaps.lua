@@ -74,11 +74,6 @@ vim.keymap.set('n', '<c-w>', ":bd<CR>")
 vim.keymap.set('i', '<c-q>', "<esc>:bnext<CR>")
 vim.keymap.set('v', '<c-q>', "<esc>:bnext<CR>")
 
--- Close buffer
-vim.api.nvim_set_keymap("n", "<Leader>w", ':bdelete<cr>', opts)
-vim.keymap.set('v', '<Leader>w', "<esc>:bd<CR>")
-vim.keymap.set('i', '<Leader>w', "<esc>:bd<CR>")
-
 -- When text is wrapped, move by terminal rows, not lines, unless a count is provided.
 vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true })
 vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true })
