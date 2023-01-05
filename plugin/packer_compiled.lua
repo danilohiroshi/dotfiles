@@ -338,6 +338,12 @@ _G.packer_plugins = {
     path = "/home/dhiroshi/.local/share/nvim/site/pack/packer/start/vim-multiple-cursors",
     url = "https://github.com/terryma/vim-multiple-cursors"
   },
+  ["vim-pasta"] = {
+    config = { "\27LJ\2\2G\0\0\2\0\4\0\0056\0\0\0009\0\1\0005\1\3\0=\1\2\0K\0\1\0\1\2\0\0\rfugitive\29pasta_disabled_filetypes\6g\bvim\0" },
+    loaded = true,
+    path = "/home/dhiroshi/.local/share/nvim/site/pack/packer/start/vim-pasta",
+    url = "https://github.com/sickill/vim-pasta"
+  },
   ["vim-repeat"] = {
     loaded = true,
     path = "/home/dhiroshi/.local/share/nvim/site/pack/packer/start/vim-repeat",
@@ -371,6 +377,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: vim-pasta
+time([[Config for vim-pasta]], true)
+try_loadstring("\27LJ\2\2G\0\0\2\0\4\0\0056\0\0\0009\0\1\0005\1\3\0=\1\2\0K\0\1\0\1\2\0\0\rfugitive\29pasta_disabled_filetypes\6g\bvim\0", "config", "vim-pasta")
+time([[Config for vim-pasta]], false)
 -- Config for: neogen
 time([[Config for neogen]], true)
 try_loadstring("\27LJ\2\0028\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\vneogen\frequire\0", "config", "neogen")
