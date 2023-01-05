@@ -76,6 +76,7 @@ sudo apt install xclip
 ## Install Linters
 - jshint: ```npm install -g jshint```
 - prettier: ```npm install -g prettier```
+- prettier: ```npm install -g eslint```
 - phpcs, Drupal: https://www.drupal.org/docs/contributed-modules/code-review-module/installing-coder-sniffer
 - Supported linters: https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
 - To install more linters, install the linter globally and add it in the config file "plugin/nullls.lua"
