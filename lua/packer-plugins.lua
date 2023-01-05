@@ -184,5 +184,5 @@ return require('packer').startup(function()
   use("kazhala/close-buffers.nvim")
 
   -- Automatically create parent dirs when saving.
-use('jessarcher/vim-heritage')
+  use('jessarcher/vim-heritage')
 end)
