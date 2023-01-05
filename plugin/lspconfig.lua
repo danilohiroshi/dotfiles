@@ -61,7 +61,23 @@ require('lspconfig').intelephense.setup({
           "*.module",
           "*.install",
           "*.theme"
+        },
+        exclude = {
+          "**/.git/**",
+          "**/.svn/**",
+          "**/.hg/**",
+          "**/CVS/**",
+          "**/.DS_Store/**",
+          "**/node_modules/**",
+          "**/files/**",
+          "**/bower_components/**",
+          "**/vendor/**/{Tests,tests}/**",
+          "**/.history/**",
         }
+      },
+      phpdoc = {
+        useFullyQualifiedNames = true,
+        returnVoid = false
       }
     }
   }
