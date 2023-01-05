@@ -32,9 +32,6 @@ vim.api.nvim_set_keymap("v", "<c-d>", 'ygv<esc>p', opts)
 vim.api.nvim_set_keymap("v", "<Leader><Leader>", '<esc>:noh<CR>', opts)
 vim.api.nvim_set_keymap("n", "<Leader><Leader>", '<esc>:noh<CR>', opts)
 
--- Close buffer
-vim.api.nvim_set_keymap("n", "<Leader>w", ':bdelete<cr>', opts)
-
 -- Undo
 vim.api.nvim_set_keymap("i", "<c-z>", '<esc>ui', opts)
 vim.api.nvim_set_keymap("n", "<c-z>", 'u', opts)
@@ -75,9 +72,12 @@ vim.keymap.set('v', '<A-k>', ":move '<-2<CR>gv=gv")
 vim.keymap.set('n', '<c-q>', ":bnext<CR>")
 vim.keymap.set('n', '<c-w>', ":bd<CR>")
 vim.keymap.set('i', '<c-q>', "<esc>:bnext<CR>")
-vim.keymap.set('i', '<c-w>', "<esc>:bd<CR>")
 vim.keymap.set('v', '<c-q>', "<esc>:bnext<CR>")
-vim.keymap.set('v', '<c-w>', "<esc>:bd<CR>")
+
+-- Close buffer
+vim.api.nvim_set_keymap("n", "<Leader>w", ':bdelete<cr>', opts)
+vim.keymap.set('v', '<Leader>w', "<esc>:bd<CR>")
+vim.keymap.set('i', '<Leader>w', "<esc>:bd<CR>")
 
 -- When text is wrapped, move by terminal rows, not lines, unless a count is provided.
 vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true })
