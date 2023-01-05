@@ -70,7 +70,6 @@ vim.keymap.set('v', '<A-k>', ":move '<-2<CR>gv=gv")
 
 -- Buffers navigation
 vim.keymap.set('n', '<c-q>', ":bnext<CR>")
-vim.keymap.set('n', '<c-w>', ":bd<CR>")
 vim.keymap.set('i', '<c-q>', "<esc>:bnext<CR>")
 vim.keymap.set('v', '<c-q>', "<esc>:bnext<CR>")
 

@@ -13,5 +13,6 @@ vim.api.nvim_set_keymap("v", "<Leader>wo", '<esc>:BDelete other<cr>', opts)
 
 -- Close buffer
 vim.api.nvim_set_keymap("n", "<Leader>ww", ':bdelete<cr>', opts)
-vim.keymap.set('v', '<Leader>ww', "<esc>:bd<CR>")
-vim.keymap.set('i', '<Leader>ww', "<esc>:bd<CR>")
+vim.keymap.set('v', '<Leader>ww', "<cmd>:bd<CR>")
+vim.keymap.set('i', '<Leader>ww', "<cmd>:bd<CR>")
+vim.keymap.set('n', '<Leader>ww', "<cmd>bd<CR>")
