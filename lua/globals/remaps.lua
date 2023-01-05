@@ -33,7 +33,7 @@ vim.api.nvim_set_keymap("v", "<Leader><Leader>", '<esc>:noh<CR>', opts)
 vim.api.nvim_set_keymap("n", "<Leader><Leader>", '<esc>:noh<CR>', opts)
 
 -- Close buffer
-vim.api.nvim_set_keymap("n", "<c-w>", ':bdelete<cr>', opts)
+vim.api.nvim_set_keymap("n", "<Leader>w", ':bdelete<cr>', opts)
 
 -- Undo
 vim.api.nvim_set_keymap("i", "<c-z>", '<esc>ui', opts)
