@@ -68,11 +68,6 @@ vim.keymap.set('n', '<A-k>', ':move .-2<CR>==')
 vim.keymap.set('v', '<A-j>', ":move '>+1<CR>gv=gv")
 vim.keymap.set('v', '<A-k>', ":move '<-2<CR>gv=gv")
 
--- Buffers navigation
-vim.keymap.set('n', '<c-q>', ":bnext<CR>")
-vim.keymap.set('i', '<c-q>', "<esc>:bnext<CR>")
-vim.keymap.set('v', '<c-q>', "<esc>:bnext<CR>")
-
 -- When text is wrapped, move by terminal rows, not lines, unless a count is provided.
 vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true })
 vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true })

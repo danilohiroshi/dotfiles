@@ -7,12 +7,7 @@ require('close_buffers').setup({
 })
 
 local opts = { noremap=true, silent=true }
-vim.api.nvim_set_keymap("n", "<Leader>wo", ':BDelete other<cr>', opts)
-vim.api.nvim_set_keymap("i", "<Leader>wo", '<esc>:BDelete other<cr>', opts)
-vim.api.nvim_set_keymap("v", "<Leader>wo", '<esc>:BDelete other<cr>', opts)
-
--- Close buffer
-vim.api.nvim_set_keymap("n", "<Leader>ww", ':bdelete<cr>', opts)
-vim.keymap.set('v', '<Leader>ww', "<cmd>:bd<CR>")
-vim.keymap.set('i', '<Leader>ww', "<cmd>:bd<CR>")
-vim.keymap.set('n', '<Leader>ww', "<cmd>bd<CR>")
+vim.api.nvim_set_keymap("n", "<Leader>q", ':bdelete<cr>', opts)
+vim.keymap.set('v', '<Leader>q', "<cmd>:bd<CR>")
+vim.keymap.set('i', '<Leader>q', "<cmd>:bd<CR>")
+vim.keymap.set('n', '<Leader>q', "<cmd>bd<CR>")
