@@ -323,6 +323,11 @@ _G.packer_plugins = {
     path = "/home/dhiroshi/.local/share/nvim/site/pack/packer/opt/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   },
+  ["vim-heritage"] = {
+    loaded = true,
+    path = "/home/dhiroshi/.local/share/nvim/site/pack/packer/start/vim-heritage",
+    url = "https://github.com/jessarcher/vim-heritage"
+  },
   ["vim-illuminate"] = {
     loaded = true,
     path = "/home/dhiroshi/.local/share/nvim/site/pack/packer/start/vim-illuminate",
