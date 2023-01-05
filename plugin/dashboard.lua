@@ -13,7 +13,7 @@ db.custom_center = {
   { icon = '  ', shortcut = 'F10',        desc = 'Terminal                  ', action = 'FloatermToggle scratch' },
   { icon = '  ', shortcut = 'Ctrl+g',     desc = 'Git status                ', action = 'FloatermToggle scratch' },
   { icon = '﬘  ', shortcut = 'Tab+Tab',    desc = 'Tab navigation            ', action = 'Telescope buffers' },
-  { icon = '  ', shortcut = 'Leader+w+w', desc = 'Close Tab                 ', action = 'bd' },
+  { icon = '  ', shortcut = 'Leader+q',   desc = 'Close Tab                 ', action = 'bd' },
 }
 
 db.custom_footer = { '' }
