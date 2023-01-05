@@ -185,4 +185,12 @@ return require('packer').startup(function()
 
   -- Automatically create parent dirs when saving.
   use('jessarcher/vim-heritage')
+
+  -- Automatically fix indentation when pasting code.
+  use({
+    'sickill/vim-pasta',
+    config = function()
+      vim.g.pasta_disabled_filetypes = { 'fugitive' }
+    end,
+  })
 end)
