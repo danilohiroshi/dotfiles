@@ -71,3 +71,8 @@ vim.keymap.set('v', '<A-k>', ":move '<-2<CR>gv=gv")
 -- When text is wrapped, move by terminal rows, not lines, unless a count is provided.
 vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true })
 vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true })
+
+-- Select all
+vim.api.nvim_set_keymap("n", "<c-a>", 'ggVG', opts)
+vim.api.nvim_set_keymap("i", "<c-a>", '<esc>ggVG', opts)
+vim.api.nvim_set_keymap("v", "<c-a>", '<esc>ggVG', opts)
