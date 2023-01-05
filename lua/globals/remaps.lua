@@ -1,8 +1,8 @@
 local opts = { noremap=true, silent=true }
 
 -- Space is my leader.
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+-- vim.g.mapleader = ' '
+-- vim.g.maplocalleader = ' '
 
 -- Copy and Paste
 vim.api.nvim_set_keymap("v", "<c-c>", '"+ygv', opts)
