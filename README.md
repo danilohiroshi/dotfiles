@@ -113,7 +113,7 @@ nvim
 - Select "(3) DAP"
 - Press "i" to install a adapter
 
-# Install LSP clients
+## Install LSP clients
 - Enter nvim
 - ```:Mason```
 - Select "(2) LSP"
@@ -142,7 +142,7 @@ $ docker-compose --version
 $ docker run hello-world
 ```
 
-# Install Drush
+## Install Drush
 
 ```bash
 composer global require symfony/http-kernel
