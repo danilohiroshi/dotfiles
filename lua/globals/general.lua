@@ -59,3 +59,6 @@ vim.opt.termguicolors = true
 
 -- Disable swapfiles
 vim.cmd('set noswapfile')
+
+-- Indentation
+vim.cmd('set autoindent')
