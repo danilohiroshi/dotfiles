@@ -121,8 +121,6 @@ nvim
 - PHP: intelephense
 - Typescript: typescript-language-server
 
-# Extra
-
 ## Docker
 
 ```bash
