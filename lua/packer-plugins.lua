@@ -73,7 +73,7 @@ return require('packer').startup(function()
   use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
 
   -- Multicursor
-  use {'terryma/vim-multiple-cursors'}
+  use {'mg979/vim-visual-multi'}
 
   -- Spell check
   use {'lewis6991/spellsitter.nvim'}
