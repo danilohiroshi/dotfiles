@@ -57,6 +57,10 @@ vim.opt.backupdir:remove('.')
 
 vim.opt.termguicolors = true
 
+vim.opt.list = true -- enable the below listchars
+vim.opt.listchars = { tab = '▸ ', trail = '·' }
+vim.opt.fillchars:append({ eob = ' ' }) -- remove the ~ from end of buffer
+
 -- Disable swapfiles
 vim.cmd('set noswapfile')
 
