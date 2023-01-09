@@ -20,8 +20,8 @@ vim.opt.smartindent = true
 vim.opt.wrap = true
 
 -- Enable mouse
-vim.g.mouse = a
-vim.g.mouse = nicr
+vim.opt.title = true
+vim.opt.mouse = 'a' -- enable mouse for all modes
 
 -- Split right first
 vim.opt.splitright = true
