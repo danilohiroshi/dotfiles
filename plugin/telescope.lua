@@ -31,7 +31,6 @@ telescope.setup({
       }
     },
     color_devicons = true,
-    file_ignore_patterns = { '.git/' },
     border = {},
     borderchars = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" },
     winblend = 0,
@@ -48,7 +47,7 @@ telescope.setup({
       height = 0.80,
       preview_cutoff = 120,
     },
-    file_ignore_patterns = { "node_modules", "min.js", "jquery.js" },
+    file_ignore_patterns = { '.git/', "node_modules", "min.js", "jquery.js" },
   },
   pickers = {
     find_files = {
