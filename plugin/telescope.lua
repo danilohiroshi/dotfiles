@@ -48,7 +48,7 @@ telescope.setup({
       height = 0.80,
       preview_cutoff = 120,
     },
-    file_ignore_patterns = { "node_modules", "min.js" },
+    file_ignore_patterns = { "node_modules", "min.js", "jquery.js" },
   },
   pickers = {
     find_files = {
