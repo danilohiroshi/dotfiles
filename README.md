@@ -146,3 +146,8 @@ $ docker run hello-world
 composer global require symfony/http-kernel
 composer global require drush/drush:8 -W      
 ```
+## Install tmux
+```bash
+sudo apt install tmux
+cp ~/.config/nvim/tmux/tmux.conf $HOME/.tmux.conf
+```
