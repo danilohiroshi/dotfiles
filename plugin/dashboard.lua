@@ -1,7 +1,10 @@
 local db = require('dashboard')
 
 db.custom_header = {
-  'Hello =]',
+  'See diagnostics: Leader + t',
+  'Send Telescope to quick fix: Ctrl + q',
+  'Clear search highlight: Leader + Leader',
+  'Tab navigarion: Tab + Tab',
 }
 
 db.custom_center = {
