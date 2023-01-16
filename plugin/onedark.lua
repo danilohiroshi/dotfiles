@@ -4,7 +4,7 @@ require('onedark').setup {
     contextColor = '#61afef',
     background = '#282c34',
     background_light = '#31353f',
-    background_darker = '#252629',
+    background_darker = '#2c2f38',
     lightgrey = '#c4c4c4',
   },
   highlights = {
