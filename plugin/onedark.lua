@@ -1,11 +1,11 @@
 require('onedark').setup {
   colors = {
-    indentLine = '#31353f',
-    contextColor = '#61afef',
+    indent_line = '#31353f',
+    context_color = '#61afef',
     background = '#282c34',
     background_light = '#31353f',
     background_darker = '#2c2f38',
-    lightgrey = '#c4c4c4',
+    light_grey = '#c4c4c4',
   },
   highlights = {
     FloatBorder = { 
@@ -26,33 +26,33 @@ require('onedark').setup {
     },
 
     TelescopePromptNormal = { 
-      fg = '$lightgrey',
+      fg = '$light_grey',
       bg = '$background_light'
     },
     TelescopePreviewNormal = { 
-      fg = '$lightgrey',
+      fg = '$light_grey',
       bg = '$background_darker'
     },
     TelescopeResultsNormal = { 
-      fg = '$lightgrey',
+      fg = '$light_grey',
       bg = '$background_darker'
     },
 
     TelescopePromptTitle = { 
-      fg = '$background',
-      bg = '$contextColor'
+      fg = '$light_grey',
+      bg = '$background_light'
     },
     TelescopePreviewTitle = { 
-      fg = '$background',
-      bg = '$contextColor'
+      fg = '$light_grey',
+      bg = '$background_light'
     },
     TelescopeResultsTitle = { 
-      fg = '$background',
-      bg = '$contextColor'
+      fg = '$light_grey',
+      bg = '$background_light'
     },
 
     -- Indentation
-    IndentBlanklineChar = { fg =  '$indentLine', fmt = "bold" },
-    IndentBlanklineContextChar = { fg =  '$contextColor', fmt = "nocombine" },
+    IndentBlanklineChar = { fg =  '$indent_line', fmt = "bold" },
+    IndentBlanklineContextChar = { fg =  '$context_color', fmt = "nocombine" },
   }
 }
