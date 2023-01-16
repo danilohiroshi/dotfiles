@@ -4,7 +4,7 @@ require('onedark').setup {
     context_color = '#61afef',
     background = '#282c34',
     background_light = '#31353f',
-    background_darker = '#2c2f38',
+    background_darker = '#23252c',
     light_grey = '#c4c4c4',
   },
   highlights = {
@@ -44,11 +44,11 @@ require('onedark').setup {
     },
     TelescopePreviewTitle = { 
       fg = '$light_grey',
-      bg = '$background_light'
+      bg = '$background_darker'
     },
     TelescopeResultsTitle = { 
       fg = '$light_grey',
-      bg = '$background_light'
+      bg = '$background_darker'
     },
 
     -- Indentation
