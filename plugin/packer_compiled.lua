@@ -250,10 +250,11 @@ _G.packer_plugins = {
     path = "/home/dhiroshi/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
-  ["onedark.nvim"] = {
+  ["onedark.vim"] = {
+    config = { "\27LJ\2\2™\3\0\0\a\0\17\0:6\0\0\0009\0\1\0'\1\2\0B\0\2\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\5\0005\3\t\0006\4\0\0009\4\3\0049\4\6\4'\5\a\0+\6\2\0B\4\3\0029\4\b\4=\4\n\0036\4\0\0009\4\3\0049\4\6\4'\5\a\0+\6\2\0B\4\3\0029\4\b\4=\4\v\3B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\f\0005\3\14\0006\4\0\0009\4\3\0049\4\6\4'\5\r\0+\6\2\0B\4\3\0029\4\b\4=\4\n\0036\4\0\0009\4\3\0049\4\6\4'\5\r\0+\6\2\0B\4\3\0029\4\b\4=\4\v\3B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\15\0005\3\16\0B\0\4\1K\0\1\0\1\0\1\afg\f#30323E\25NvimTreeIndentMarker\1\0\0\15CursorLine\17CursorLineBg\abg\afg\1\0\0\15background\16NormalFloat\24nvim_get_hl_by_name\16FloatBorder\16nvim_set_hl\bapi\24colorscheme onedark\bcmd\bvim\0" },
     loaded = true,
-    path = "/home/dhiroshi/.local/share/nvim/site/pack/packer/start/onedark.nvim",
-    url = "https://github.com/navarasu/onedark.nvim"
+    path = "/home/dhiroshi/.local/share/nvim/site/pack/packer/start/onedark.vim",
+    url = "https://github.com/joshdick/onedark.vim"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -377,22 +378,26 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: vim-pasta
-time([[Config for vim-pasta]], true)
-try_loadstring("\27LJ\2\2G\0\0\2\0\4\0\0056\0\0\0009\0\1\0005\1\3\0=\1\2\0K\0\1\0\1\2\0\0\rfugitive\29pasta_disabled_filetypes\6g\bvim\0", "config", "vim-pasta")
-time([[Config for vim-pasta]], false)
+-- Config for: onedark.vim
+time([[Config for onedark.vim]], true)
+try_loadstring("\27LJ\2\2™\3\0\0\a\0\17\0:6\0\0\0009\0\1\0'\1\2\0B\0\2\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\5\0005\3\t\0006\4\0\0009\4\3\0049\4\6\4'\5\a\0+\6\2\0B\4\3\0029\4\b\4=\4\n\0036\4\0\0009\4\3\0049\4\6\4'\5\a\0+\6\2\0B\4\3\0029\4\b\4=\4\v\3B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\f\0005\3\14\0006\4\0\0009\4\3\0049\4\6\4'\5\r\0+\6\2\0B\4\3\0029\4\b\4=\4\n\0036\4\0\0009\4\3\0049\4\6\4'\5\r\0+\6\2\0B\4\3\0029\4\b\4=\4\v\3B\0\4\0016\0\0\0009\0\3\0009\0\4\0)\1\0\0'\2\15\0005\3\16\0B\0\4\1K\0\1\0\1\0\1\afg\f#30323E\25NvimTreeIndentMarker\1\0\0\15CursorLine\17CursorLineBg\abg\afg\1\0\0\15background\16NormalFloat\24nvim_get_hl_by_name\16FloatBorder\16nvim_set_hl\bapi\24colorscheme onedark\bcmd\bvim\0", "config", "onedark.vim")
+time([[Config for onedark.vim]], false)
 -- Config for: neogen
 time([[Config for neogen]], true)
 try_loadstring("\27LJ\2\0028\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\vneogen\frequire\0", "config", "neogen")
 time([[Config for neogen]], false)
--- Config for: nvim-autopairs
-time([[Config for nvim-autopairs]], true)
-try_loadstring("\27LJ\2\2<\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
-time([[Config for nvim-autopairs]], false)
 -- Config for: gitsigns.nvim
 time([[Config for gitsigns.nvim]], true)
 try_loadstring("\27LJ\2\2Ý\1\0\1\6\0\v\0\0196\1\0\0009\1\1\0019\1\2\1'\2\3\0'\3\4\0'\4\5\0005\5\6\0=\0\a\5B\1\5\0016\1\0\0009\1\1\0019\1\2\1'\2\3\0'\3\b\0'\4\t\0005\5\n\0=\0\a\5B\1\5\1K\0\1\0\1\0\1\texpr\0021&diff ? '[c' : '<cmd>Gitsigns prev_hunk<CR>'\a[h\vbuffer\1\0\1\texpr\0021&diff ? ']c' : '<cmd>Gitsigns next_hunk<CR>'\a]h\6n\bset\vkeymap\bvim`\1\0\3\0\6\0\t6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0003\2\4\0=\2\5\1B\0\2\1K\0\1\0\14on_attach\0\1\0\1\18sign_priority\3\20\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
 time([[Config for gitsigns.nvim]], false)
+-- Config for: vim-pasta
+time([[Config for vim-pasta]], true)
+try_loadstring("\27LJ\2\2G\0\0\2\0\4\0\0056\0\0\0009\0\1\0005\1\3\0=\1\2\0K\0\1\0\1\2\0\0\rfugitive\29pasta_disabled_filetypes\6g\bvim\0", "config", "vim-pasta")
+time([[Config for vim-pasta]], false)
+-- Config for: nvim-autopairs
+time([[Config for nvim-autopairs]], true)
+try_loadstring("\27LJ\2\2<\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
+time([[Config for nvim-autopairs]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)
@@ -400,14 +405,14 @@ pcall(vim.api.nvim_create_user_command, 'CodeActionMenu', function(cmdargs)
           require('packer.load')({'nvim-code-action-menu'}, { cmd = 'CodeActionMenu', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
         end,
         {nargs = '*', range = true, bang = true, complete = function()
-          require('packer.load')({'nvim-code-action-menu'}, { cmd = 'CodeActionMenu' }, _G.packer_plugins)
+          require('packer.load')({'nvim-code-action-menu'}, {}, _G.packer_plugins)
           return vim.fn.getcompletion('CodeActionMenu ', 'cmdline')
       end})
 pcall(vim.api.nvim_create_user_command, 'G', function(cmdargs)
           require('packer.load')({'vim-fugitive'}, { cmd = 'G', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
         end,
         {nargs = '*', range = true, bang = true, complete = function()
-          require('packer.load')({'vim-fugitive'}, { cmd = 'G' }, _G.packer_plugins)
+          require('packer.load')({'vim-fugitive'}, {}, _G.packer_plugins)
           return vim.fn.getcompletion('G ', 'cmdline')
       end})
 time([[Defining lazy-load commands]], false)
