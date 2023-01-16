@@ -13,16 +13,16 @@ require('onedark').setup {
       bg = '$background_light'
     },
     TelescopePreviewBorder = { 
-      fg = '$background_light',
-      bg = '$background_light'
+      fg = '$background_darker',
+      bg = '$background_darker'
     },
     TelescopePromptBorder = { 
       fg = '$background_light',
       bg = '$background_light'
     },
     TelescopeResultsBorder = { 
-      fg = '$background_light',
-      bg = '$background_light'
+      fg = '$background_darker',
+      bg = '$background_darker'
     },
 
     TelescopePromptNormal = { 
@@ -31,11 +31,11 @@ require('onedark').setup {
     },
     TelescopePreviewNormal = { 
       fg = '$lightgrey',
-      bg = '$background_light'
+      bg = '$background_darker'
     },
     TelescopeResultsNormal = { 
       fg = '$lightgrey',
-      bg = '$background_light'
+      bg = '$background_darker'
     },
 
     TelescopePromptTitle = { 
