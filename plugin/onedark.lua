@@ -51,6 +51,15 @@ require('onedark').setup {
       bg = '$background_darker'
     },
 
+    FloatermBorder = { 
+      fg = '$background_darker',
+      bg = '$background_darker'
+    },
+    Floaterm = { 
+      fg = '$light_grey',
+      bg = '$background_darker'
+    },
+
     -- Indentation
     IndentBlanklineChar = { fg =  '$indent_line', fmt = "bold" },
     IndentBlanklineContextChar = { fg =  '$context_color', fmt = "nocombine" },
