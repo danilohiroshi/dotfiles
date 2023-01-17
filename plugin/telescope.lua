@@ -14,10 +14,10 @@ telescope.setup({
     sorting_strategy = 'ascending',
     mappings = {
       i = {
-        ['<esc>'] = actions.close,
+        -- ['<esc>'] = actions.close,
         ['<C-Down>'] = actions.cycle_history_next,
         ['<C-Up>'] = actions.cycle_history_prev,
-        ['<C-v>'] = { '<esc>ia<esc>pBxv$y', type = "command" }
+        ['<C-v>'] = { '<esc>ia<esc>vpv$y', type = "command" }
       }
     },
     color_devicons = true,
@@ -63,12 +63,12 @@ require('telescope').load_extension('live_grep_args')
 
 -- Open file: Ctrl-p
 vim.api.nvim_set_keymap("n", "<c-p>", ':Telescope find_files<CR>', {noremap=true, silent=true})
-vim.api.nvim_set_keymap("v", "<c-p>", 'y<esc>:Telescope find_files<CR><esc>ia<esc>pBxv$y', {noremap=true, silent=true})
+vim.api.nvim_set_keymap("v", "<c-p>", 'y<esc>:Telescope find_files<CR><esc>ia<esc>vpv$y', {noremap=true, silent=true})
 vim.api.nvim_set_keymap("i", "<c-p>", 'y<esc>:Telescope find_files<CR>', {noremap=true, silent=true})
 
 -- Global Search: Ctrl-Shift-f
 vim.api.nvim_set_keymap("n", "<C-f>", ':Telescope live_grep<CR>', {noremap=true, silent=true})
-vim.api.nvim_set_keymap("v", "<C-f>", 'y<esc>:Telescope live_grep<CR><esc>ia<esc>pBxv$y', {noremap=true, silent=true})
+vim.api.nvim_set_keymap("v", "<C-f>", 'y<esc>:Telescope live_grep<CR><esc>ia<esc>vpv$y', {noremap=true, silent=true})
 vim.api.nvim_set_keymap("i", "<C-f>", '<esc>:Telescope live_grep<CR>', {noremap=true, silent=true})
 
 -- Open Old files
