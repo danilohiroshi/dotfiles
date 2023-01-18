@@ -36,10 +36,6 @@ vim.api.nvim_set_keymap("n", "<Leader><Leader>", '<esc>:noh<CR>', opts)
 vim.api.nvim_set_keymap("i", "<c-z>", '<esc>ui', opts)
 vim.api.nvim_set_keymap("n", "<c-z>", 'u', opts)
 
--- Window split
-vim.api.nvim_set_keymap("n", "<C-h>", "<C-w>h", opts)
-vim.api.nvim_set_keymap("n", "<C-l>", "<C-w>l", opts)
-
 -- Reselect visual selection after indenting.
 vim.keymap.set('v', '<', '<gv')
 vim.keymap.set('v', '>', '>gv')
