@@ -32,7 +32,12 @@ require('nvim-tree').setup({
         col = 1,
       }
     }
-  }
+  },
+  update_focused_file = {
+    enable = true,
+    update_root = false,
+    ignore_list = {},
+  },
 })
 
 vim.cmd([[

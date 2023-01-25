@@ -189,4 +189,7 @@ return require('packer').startup(function()
       vim.g.pasta_disabled_filetypes = { 'fugitive' }
     end,
   })
+
+  -- Tester
+  use('vim-test/vim-test')
 end)
