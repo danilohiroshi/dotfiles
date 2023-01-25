@@ -24,6 +24,7 @@ vim.opt.title = true
 vim.opt.mouse = 'a' -- enable mouse for all modes
 
 -- Split right first
+vim.opt.splitbelow = true
 vim.opt.splitright = true
 
 -- Search

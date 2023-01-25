@@ -86,9 +86,6 @@ return require('packer').startup(function()
   -- Git diff view
   use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
 
-  -- Terminal
-  use "voldikss/vim-floaterm"
-
   -- Pair
   use({
     'windwp/nvim-autopairs',
