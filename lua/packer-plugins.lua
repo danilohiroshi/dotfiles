@@ -124,9 +124,6 @@ return require('packer').startup(function()
     requires = 'kyazdani42/nvim-web-devicons',
   })
   
-  -- Dashboard
-  use('glepnir/dashboard-nvim')
-  
   -- Highlight current word
   use {
     'RRethy/vim-illuminate'

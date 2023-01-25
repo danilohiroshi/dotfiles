@@ -9,7 +9,7 @@ null_ls.setup({
           }
       }),
       null_ls.builtins.diagnostics.tsc,
-      null_ls.builtins.diagnostics.eslint,
+      -- null_ls.builtins.diagnostics.eslint,
       null_ls.builtins.formatting.prettier,
       null_ls.builtins.diagnostics.phpcs.with({
         extra_args = {
