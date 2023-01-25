@@ -7,7 +7,8 @@ require('nvim-tree').setup({
   },
   renderer = {
     highlight_opened_files = '1',
-    group_empty = true,
+    group_empty = false,
+    indent_width = 1,
     icons = {
       show = {
         folder_arrow = false,
@@ -20,7 +21,7 @@ require('nvim-tree').setup({
   },
   view = {
     float = {
-      enable = true,
+      enable = false,
       quit_on_focus_loss = true,
       open_win_config = {
         relative = "editor",
