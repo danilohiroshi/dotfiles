@@ -1,4 +1,5 @@
 ## Install git
+
 ```basg
 sudo apt install git
 git config --global  user.email "example@example.com"
@@ -22,7 +23,9 @@ git clone https://github.com/danilohiroshi/neovim.git ~/.config/nvim
 ```
 
 ## Install dependencies
+
 - Install ripgrep
+
 ```
 cd Downloads
 RIPGREP_VERSION=$(curl -s "https://api.github.com/repos/BurntSushi/ripgrep/releases/latest" | grep -Po '"tag_name": "\K[0-9.]+')
@@ -32,56 +35,70 @@ rg --version
 ```
 
 ## Install build-essential
+
 ```
 sudo apt install build-essential
 ```
 
 ## Install fonts
+
 - Font: https://www.nerdfonts.com/cheat-sheet
+
 ```
 mkdir -p ~/.local/share/fonts
 cp ~/.config/nvim/fonts/*.ttf ~/.local/share/fonts
 ```
 
 ## Install ZSH
+
 ```
 sudo apt install zsh -y
 ```
+
 - In ~/.bashrc, add "exec zsh"
 
 ## Install Oh-my-zsh
+
 - https://ohmyz.sh/#install
 - Copy config
+
 ```
 cp ~/.config/nvim/zsh/.zshrc ~/
 ```
 
 ## Install xclip
+
 - Only if using X11
+
 ```
 sudo apt install xclip
 ```
 
 ## Install php
+
 - https://www.php.net/downloads
-- Install php-curl ```sudo apt install php-curl```
+- Install php-curl `sudo apt install php-curl`
 
 ## Install composer
+
 - https://getcomposer.org/download/
-- In ~/.bashrc add ```export PATH="$HOME/.config/composer/vendor/bin:$PATH"```
+- In ~/.bashrc add `export PATH="$HOME/.config/composer/vendor/bin:$PATH"`
 
 ## Install nvm, node and language servers
+
 - https://github.com/nvm-sh/nvm
 
 ## Install Linters
-- jshint: ```npm install -g jshint```
-- prettier: ```npm install -g prettier```
-- prettier: ```npm install -g eslint```
+
+- jshint: `npm install -g jshint`
+- prettier: `npm install -g prettier`
+- prettier: `npm install -g eslint`
 - phpcs, Drupal: https://www.drupal.org/docs/contributed-modules/code-review-module/installing-coder-sniffer
 - Supported linters: https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
 - To install more linters, install the linter globally and add it in the config file "plugin/nullls.lua"
 
 ## Install Kitty terminal
+
 ```bash
 sudo apt install kitty
 mkdir -p ~/.config/kitty
@@ -89,6 +106,7 @@ cp ~/.config/nvim/kitty/* ~/.config/kitty
 ```
 
 ## Install plugins
+
 - Install packer
 - https://github.com/wbthomason/packer.nvim#quickstart
 
@@ -99,6 +117,7 @@ nvim
 ```
 
 ## Install language parser
+
 ```
 :TSInstall php
 :TSInstall javascript
@@ -108,14 +127,15 @@ nvim
 ```
 
 ## Debuggers
-- Enter nvim
-- ```:Mason```
-- Select "(3) DAP"
-- Press "i" to install a adapter
+
+- cd ~/.config/nvim/debuggers/node/vscode-node-debug2
+- npm install
+- NODE_OPTIONS=--no-experimental-fetch npm run build
 
 ## Install LSP clients
+
 - Enter nvim
-- ```:Mason```
+- `:Mason`
 - Select "(2) LSP"
 - Press "i" to install the clients
 - PHP: intelephense
@@ -136,7 +156,7 @@ $ sudo chmod +x /usr/local/bin/docker-compose
 # Test
 $ docker --version
 $ docker-compose --version
-  
+
 $ docker run hello-world
 ```
 
@@ -144,9 +164,11 @@ $ docker run hello-world
 
 ```bash
 composer global require symfony/http-kernel
-composer global require drush/drush:8 -W      
+composer global require drush/drush:8 -W
 ```
+
 ## Install tmux
+
 ```bash
 sudo apt install tmux
 cp ~/.config/nvim/tmux/tmux.conf $HOME/.tmux.conf
