@@ -18,6 +18,7 @@ ls.add_snippets('php', {
 
 ls.add_snippets('typescript', {
   ls.parser.parse_snippet('import', "import $1 from '$0'"),
+  ls.parser.parse_snippet('met', "import $1 from '$0'"),
 })
 
 ls.add_snippets('vue', {
