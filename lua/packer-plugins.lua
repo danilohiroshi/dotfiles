@@ -142,6 +142,7 @@ return require('packer').startup(function()
 
   -- Linters
   use {'jose-elias-alvarez/null-ls.nvim'}
+  use {'jayp0521/mason-null-ls.nvim'}
 
   -- Debugger
   use {
