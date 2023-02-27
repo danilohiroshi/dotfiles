@@ -187,4 +187,5 @@ return require('packer').startup(function()
 
   -- Tester
   use('vim-test/vim-test')
+  use ('David-Kunz/jester')
 end)
