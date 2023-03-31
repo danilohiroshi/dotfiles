@@ -12,61 +12,6 @@ dap.adapters.node2 = {
 
 require('dap.ext.vscode').load_launchjs(nil, { node = {'javascript', 'javascriptreact', 'typescriptreact', 'typescript' } })
 
--- dap.configurations.typescript = {
---   {
---     name = 'Launch',
---     type = 'node2',
---     request = 'launch',
---     program = '${workspaceFolder}/node_modules/serverless/bin/serverless',
---     args = { 'offline', 'start', '--stage', 'dev', '--noTimeout' };
---     options = {
---       env = { AWS_PROFILE = "vision-dxp" };
---     };
---     cwd = vim.fn.getcwd(),
---     cwd = '${workspaceFolder}',
---     sourceMaps = false,
---     protocol = 'inspector',
---     console = 'integratedTerminal',
---   }
--- }
--- dap.configurations.typescript = {
---   {
---     name = 'Launch',
---     type = 'node2',
---     request = 'launch',
---     program = '${workspaceFolder}/node_modules/serverless/bin/serverless',
---     args = { 'offline', 'start', '--stage', 'dev', '--noTimeout' };
---     options = {
---       env = { "AWS_PROFILE=vision-dxp" };
---     };
---     -- cwd = vim.fn.getcwd(),
---     cwd = '${workspaceFolder}',
---     sourceMaps = false,
---     protocol = 'inspector',
---     console = 'integratedTerminal',
---   }
--- }
-
--- dap.configurations.javascript = {
---   {
---     name = 'Launch',
---     type = 'node2',
---     request = 'launch',
---     program = '${file}',
---     cwd = vim.fn.getcwd(),
---     sourceMaps = true,
---     protocol = 'inspector',
---     console = 'integratedTerminal',
---   },
---   {
---     -- For this to work you need to make sure the node process is started with the `--inspect` flag.
---     name = 'Attach to process',
---     type = 'node2',
---     request = 'attach',
---     processId = require'dap.utils'.pick_process,
---   },
--- }
-
 dap.defaults.fallback.terminal_win_cmd = 'tabnew'
 
 local opts = { noremap=true, silent=true }
