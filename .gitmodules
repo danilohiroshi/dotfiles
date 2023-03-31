@@ -1,3 +1,0 @@
-[submodule "debuggers/node/vscode-node-debug2"]
-	path = debuggers/node/vscode-node-debug2
-	url = https://github.com/microsoft/vscode-node-debug2.git

@@ -2,15 +2,33 @@ local dap = require('dap')
 dap.adapters.node = {
   type = 'executable',
   command = 'node',
-  args = {os.getenv('HOME') .. '/.config/nvim/debuggers/node/vscode-node-debug2/out/src/nodeDebug.js'},
+  args = {os.getenv('HOME') .. '/.local/share/nvim/mason/packages/node-debug2-adapter/out/src/nodeDebug.js'},
 }
 dap.adapters.node2 = {
   type = 'executable',
   command = 'node',
-  args = {os.getenv('HOME') .. '/.config/nvim/debuggers/node/vscode-node-debug2/out/src/nodeDebug.js'},
+  args = {os.getenv('HOME') .. '/.local/share/nvim/mason/packages/node-debug2-adapter/out/src/nodeDebug.js'},
 }
 
 require('dap.ext.vscode').load_launchjs(nil, { node = {'javascript', 'javascriptreact', 'typescriptreact', 'typescript' } })
+
+-- dap.configurations.typescript = {
+--   {
+--     name = 'Launch',
+--     type = 'node2',
+--     request = 'launch',
+--     program = '${workspaceFolder}/node_modules/serverless/bin/serverless',
+--     args = { 'offline', 'start', '--stage', 'dev', '--noTimeout' };
+--     options = {
+--       env = { AWS_PROFILE = "vision-dxp" };
+--     };
+--     cwd = vim.fn.getcwd(),
+--     cwd = '${workspaceFolder}',
+--     sourceMaps = false,
+--     protocol = 'inspector',
+--     console = 'integratedTerminal',
+--   }
+-- }
 -- dap.configurations.typescript = {
 --   {
 --     name = 'Launch',
