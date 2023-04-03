@@ -10,7 +10,14 @@ dap.adapters.node2 = {
   args = {os.getenv('HOME') .. '/.local/share/nvim/mason/packages/node-debug2-adapter/out/src/nodeDebug.js'},
 }
 
-require('dap.ext.vscode').load_launchjs(nil, { node = {'javascript', 'javascriptreact', 'typescriptreact', 'typescript' } })
+require('dap.ext.vscode').load_launchjs(nil, { 
+  node = {
+    'javascript',
+    'javascriptreact',
+    'typescriptreact',
+    'typescript'
+  } 
+})
 
 dap.defaults.fallback.terminal_win_cmd = 'tabnew'
 
