@@ -128,9 +128,7 @@ nvim
 
 ## Debuggers
 
-- cd ~/.config/nvim/debuggers/node/vscode-node-debug2
-- npm install
-- NODE_OPTIONS=--no-experimental-fetch npm run build
+- https://github.com/mfussenegger/nvim-dap/wiki/Debug-Adapter-installation#vscode-js-debug
 
 ## Install LSP clients
 
