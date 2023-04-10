@@ -5,15 +5,33 @@ dap.adapters.node = {
   args = {os.getenv('HOME') .. '/.local/share/nvim/mason/packages/node-debug2-adapter/out/src/nodeDebug.js'},
 }
 dap.adapters.node2 = dap.adapters.node
-
-require('dap.ext.vscode').load_launchjs(nil, { 
-  node = {
-    'javascript',
-    'javascriptreact',
-    'typescriptreact',
-    'typescript'
-  } 
-})
+dap.adapters["pwa-node"] = {
+  type = "server",
+  host = "localhost",
+  port = "${port}",
+  executable = {
+    command = "node",
+    -- 💀 Make sure to update this path to point to your installation
+    args = {os.getenv('HOME') .. '/.local/share/nvim/js-debug/src/dapDebugServer.js', "${port}"},
+  }
+}
+dap.configurations.typescript = {
+  {
+    name = 'Launch',
+    type = 'pwa-node',
+    request = 'launch',
+    program = '${workspaceFolder}/node_modules/serverless/bin/serverless',
+    args = { 'offline', 'start', '--stage', 'dev', '--noTimeout' };
+    options = {
+      env = { AWS_PROFILE = "vision-dxp" };
+    };
+    cwd = vim.fn.getcwd(),
+    cwd = '${workspaceFolder}',
+    sourceMaps = false,
+    protocol = 'inspector',
+    console = 'integratedTerminal',
+  }
+}
 
 dap.defaults.fallback.terminal_win_cmd = 'tabnew'
 
