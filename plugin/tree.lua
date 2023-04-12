@@ -21,7 +21,7 @@ require('nvim-tree').setup({
   },
   view = {
     float = {
-      enable = false,
+      enable = true,
       quit_on_focus_loss = true,
       open_win_config = {
         relative = "editor",
