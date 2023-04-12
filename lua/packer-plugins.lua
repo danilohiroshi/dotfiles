@@ -186,9 +186,12 @@ return require('packer').startup(function()
     end,
   })
 
+  -- Terminal
+  use({
+    'voldikss/vim-floaterm',
+  })
+
   -- Tester
-  -- use('vim-test/vim-test')
-  -- use ('David-Kunz/jester')
   use {
     "nvim-neotest/neotest",
     requires = {
