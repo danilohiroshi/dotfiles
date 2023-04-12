@@ -187,6 +187,15 @@ return require('packer').startup(function()
   })
 
   -- Tester
-  use('vim-test/vim-test')
-  use ('David-Kunz/jester')
+  -- use('vim-test/vim-test')
+  -- use ('David-Kunz/jester')
+  use {
+    "nvim-neotest/neotest",
+    requires = {
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+      "antoinemadec/FixCursorHold.nvim",
+      'haydenmeade/neotest-jest',
+    }
+  }
 end)

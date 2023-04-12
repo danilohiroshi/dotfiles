@@ -1,12 +1,22 @@
-vim.keymap.set('n', '<c-t>n', ':TestNearest<CR>')
-vim.keymap.set('n', '<c-t>f', ':TestFile<CR>')
-vim.keymap.set('n', '<c-t>s', ':TestSuite<CR>')
-vim.keymap.set('n', '<c-t>c', ':TestSuite --coverage<CR>')
-vim.keymap.set('n', '<c-t>l', ':TestLast<CR>')
-vim.keymap.set('n', '<c-t>v', ':TestVisit<CR>')
-vim.keymap.set('n', '<c-t>d', ':lua require"jester".run()<CR>')
+require('neotest').setup({
+  ...,
+  adapters = {
+    require('neotest-jest')({
+      jestCommand = "npm test --",
+      jestConfigFile = "custom.jest.config.ts",
+      env = { CI = true },
+      cwd = function(path)
+        return vim.fn.getcwd()
+      end,
+    }),
+  },
+  quickfix = {
+    enabled = true,
+    open = false
+  }
+})
 
-vim.cmd([[
-  let g:test#strategy = 'neovim'
-  let test#neovim#term_position = "vert"
-]])
+vim.keymap.set('n', '<c-t>n', ':lua require("neotest").run.run()<CR>')
+vim.keymap.set('n', '<c-t>f', ':lua require("neotest").run.run(vim.fn.expand("%"))<CR>')
+vim.keymap.set('n', '<c-t>d', ':lua require("neotest").run.run({strategy = "dap"})<CR>')
+vim.keymap.set('n', '<c-t>o', ':lua require("neotest").summary.toggle()<CR>')
