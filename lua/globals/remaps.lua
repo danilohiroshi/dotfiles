@@ -70,3 +70,26 @@ vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true })
 vim.api.nvim_set_keymap("n", "<c-a>", 'ggVG', opts)
 vim.api.nvim_set_keymap("i", "<c-a>", '<esc>ggVG', opts)
 vim.api.nvim_set_keymap("v", "<c-a>", '<esc>ggVG', opts)
+
+-- Switch panel
+vim.keymap.set('n', '<c-j>', '<c-w>j')
+vim.keymap.set('n', '<c-k>', '<c-w>k')
+vim.keymap.set('n', '<c-l>', '<c-w>l')
+vim.keymap.set('n', '<c-h>', '<c-w>h')
+vim.keymap.set('i', '<c-j>', '<c-w>j')
+vim.keymap.set('i', '<c-k>', '<c-w>k')
+vim.keymap.set('i', '<c-l>', '<c-w>l')
+vim.keymap.set('i', '<c-h>', '<c-w>h')
+
+-- Close buffer
+vim.keymap.set('n', '<c-w>', ':bd<CR>')
+vim.keymap.set('i', '<c-w>', '<esc>:bd<CR>')
+vim.keymap.set('v', '<c-w>', '<esc>:bd<CR>')
+
+-- Tab navigation
+vim.keymap.set('n', '<PageUp>', '<cmd>bnext<CR>')
+vim.keymap.set('n', '<PageDown>', '<cmd>bprevious<CR>')
+vim.keymap.set('i', '<PageUp>', '<cmd>bnext<CR>')
+vim.keymap.set('i', '<PageDown>', '<cmd>bprevious<CR>')
+vim.keymap.set('v', '<PageUp>', '<cmd>bnext<CR>')
+vim.keymap.set('v', '<PageDown>', '<cmd>bprevious<CR>')
