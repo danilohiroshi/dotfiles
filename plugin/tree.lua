@@ -8,7 +8,7 @@ require('nvim-tree').setup({
   renderer = {
     highlight_opened_files = '1',
     group_empty = false,
-    indent_width = 1,
+    indent_width = 3,
     icons = {
       show = {
         folder_arrow = false,
