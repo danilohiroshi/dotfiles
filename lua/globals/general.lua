@@ -67,3 +67,6 @@ vim.cmd('set noswapfile')
 
 -- Indentation
 vim.cmd('set autoindent')
+
+-- Fold
+vim.cmd('set foldmethod=manual')

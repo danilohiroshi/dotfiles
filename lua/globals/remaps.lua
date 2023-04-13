@@ -29,8 +29,9 @@ vim.api.nvim_set_keymap("n", "<c-d>", '<S-v>yp', opts)
 vim.api.nvim_set_keymap("v", "<c-d>", 'ygv<esc>p', opts)
 
 -- Clear highlighting
-vim.api.nvim_set_keymap("v", "<Leader><Leader>", '<esc>:noh<CR>', opts)
-vim.api.nvim_set_keymap("n", "<Leader><Leader>", '<esc>:noh<CR>', opts)
+-- vim.api.nvim_set_keymap("v", "<Leader><Leader>", '<esc>:noh<CR>', opts)
+-- vim.api.nvim_set_keymap("v", "<Leader><Leader>", '<esc>:noh<CR>', opts)
+vim.api.nvim_set_keymap("n", "<CR>", '<esc>:noh<CR>', opts)
 
 -- Undo
 vim.api.nvim_set_keymap("i", "<c-z>", '<esc>ui', opts)
