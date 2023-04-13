@@ -205,13 +205,5 @@ return require('packer').startup(function()
     }
   }
 
-  use({
-    "folke/noice.nvim",
-    requires = {
-      "MunifTanjim/nui.nvim",
-      "rcarriga/nvim-notify",
-      }
-  })
-
   -- END
 end)
