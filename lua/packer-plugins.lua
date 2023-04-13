@@ -86,6 +86,9 @@ return require('packer').startup(function()
   -- Git diff view
   use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
 
+  -- Leap
+  use { 'ggandor/leap.nvim', requires = 'tpope/vim-repeat' }
+
   -- Pair
   use({
     'windwp/nvim-autopairs',
