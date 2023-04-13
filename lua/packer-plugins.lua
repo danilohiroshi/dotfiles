@@ -83,9 +83,6 @@ return require('packer').startup(function()
   -- Spell check
   use {'lewis6991/spellsitter.nvim'}
 
-  -- Git diff view
-  use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
-
   -- Leap
   use { 'ggandor/leap.nvim', requires = 'tpope/vim-repeat' }
 
