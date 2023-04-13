@@ -204,4 +204,14 @@ return require('packer').startup(function()
       'haydenmeade/neotest-jest',
     }
   }
+
+  use({
+    "folke/noice.nvim",
+    requires = {
+      "MunifTanjim/nui.nvim",
+      "rcarriga/nvim-notify",
+      }
+  })
+
+  -- END
 end)
