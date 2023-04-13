@@ -39,4 +39,4 @@ vim.api.nvim_set_keymap("n", "<Leader>f", ':lua vim.lsp.buf.format()<cr>', opts)
 vim.api.nvim_set_keymap("i", "<Leader>f", '<esc>:lua vim.lsp.buf.format()<cr>', opts)
 vim.api.nvim_set_keymap("v", "<Leader>f", '<esc>:lua vim.lsp.buf.format()<cr>', opts)
 -- Format on save
-vim.cmd [[autocmd BufWritePre *.ts lua vim.lsp.buf.format()]]
+vim.cmd [[autocmd BufWritePre *{ts,tsx} lua vim.lsp.buf.format()]]
