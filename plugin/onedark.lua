@@ -64,6 +64,10 @@ require('onedark').setup {
       fg = '$light_grey',
       bg = '$background_statusline'
     },
+    CursorColumn = {
+      fg = '$background_darker',
+      bg = '$light_grey'
+    },
 
     -- Indentation
     IndentBlanklineChar = { fg =  '$indent_line', fmt = "bold" },
