@@ -6,6 +6,7 @@ require('onedark').setup {
     background_light = '#31353f',
     background_darker = '#23252c',
     light_grey = '#c4c4c4',
+    background_statusline = '#393f4a'
   },
   highlights = {
     FloatBorder = { 
@@ -58,6 +59,10 @@ require('onedark').setup {
     Floaterm = { 
       fg = '$light_grey',
       bg = '$background_darker'
+    },
+    StatusLineNonText = {
+      fg = '$light_grey',
+      bg = '$background_statusline'
     },
 
     -- Indentation
