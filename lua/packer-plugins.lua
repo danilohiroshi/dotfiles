@@ -76,7 +76,7 @@ return require('packer').startup(function()
   use 'arkav/lualine-lsp-progress'
 
   -- Buffer line
-  use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
+  use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
 
   -- Multicursor
   use {'mg979/vim-visual-multi'}
