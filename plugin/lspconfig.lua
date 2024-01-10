@@ -1,8 +1,4 @@
 local util = require('lspconfig.util')
-require("mason-lspconfig").setup {
-  ensure_installed = { "intelephense", "tsserver" },
-}
-
 -- vim.api.nvim_create_user_command('Format', vim.lsp.buf.formatting_seq_sync, {})
 
 vim.keymap.set('n', '<leader>ca', ':CodeActionMenu<CR>')
