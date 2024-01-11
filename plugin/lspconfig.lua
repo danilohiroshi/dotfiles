@@ -83,7 +83,7 @@ local on_attach = function(_, bufnr)
   vim.keymap.set('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', { buffer = bufnr })
   vim.keymap.set('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', { buffer = bufnr })
   vim.keymap.set('n', '<leader>D', '<cmd>lua vim.lsp.buf.type_definition()<CR>', { buffer = bufnr })
-  vim.keymap.set('n', 'gr', '<cmd>Telescope lsp_references()<CR>', { buffer = bufnr })
 end
 local opts = { noremap=true, silent=true }
 vim.keymap.set('n', '<F2>', ':lua vim.lsp.buf.rename()<CR>', opts)
+vim.keymap.set('n', 'gr', ':Telescope lsp_references<CR>', opts)
