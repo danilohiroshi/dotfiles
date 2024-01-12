@@ -9,21 +9,6 @@ vim.keymap.set('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<CR>')
 
 -- vim.lsp.set_log_level("debug")
 
-vim.diagnostic.config({
-  virtual_text = false,
-  severity_sort = true,
-  float = {
-    source = true,
-    focus = false,
-    format = function(diagnostic)
-      if diagnostic.user_data ~= nil and diagnostic.user_data.lsp.code ~= nil then
-        return string.format('%s: %s', diagnostic.user_data.lsp.code, diagnostic.message)
-      end
-      return diagnostic.message
-    end,
-  },
-})
-
 -- nvim-cmp supports additional completion capabilities
 local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
