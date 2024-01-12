@@ -71,4 +71,4 @@ local on_attach = function(_, bufnr)
 end
 local opts = { noremap=true, silent=true }
 vim.keymap.set('n', '<F2>', ':lua vim.lsp.buf.rename()<CR>', opts)
-vim.keymap.set('n', 'gr', ':Telescope lsp_references<CR>', opts)
+vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
