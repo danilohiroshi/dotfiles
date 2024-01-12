@@ -26,17 +26,18 @@ require('lualine').setup({
     },
     lualine_c = {
       'filename',
-      'lsp_progress'
+      'lsp_progress',
+      separator
     },
     lualine_x = {
       'filetype',
       'encoding',
       'fileformat',
+      separator
     },
     lualine_y = {
-      separator,
       '(vim.bo.expandtab and "␠ " or "⇥ ") .. " " .. vim.bo.shiftwidth',
-      separator,
+      separator
     },
     lualine_z = {
       'location',
