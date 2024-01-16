@@ -128,7 +128,12 @@ nvim
 
 ## Debuggers
 
-- https://github.com/mfussenegger/nvim-dap/wiki/Debug-Adapter-installation#vscode-js-debug
+- npm i -g gulp
+- Download https://github.com/microsoft/vscode-js-debug
+- cd Code/vscode-js-debug
+- npm install --legacy-peer-deps
+- npx gulp vsDebugServerBundle
+- rm -rf out && mv dist out
 
 ## Install LSP clients
 
