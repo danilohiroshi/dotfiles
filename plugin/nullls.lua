@@ -1,5 +1,4 @@
 local null_ls = require("null-ls")
-local cspell = require('cspell')
 
 local on_attach = function(client)
   if client.server_capabilities.document_formatting then
