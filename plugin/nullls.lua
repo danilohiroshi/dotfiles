@@ -9,7 +9,14 @@ end
 -- - Supported linters: https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
 null_ls.setup({
     sources = {
-      null_ls.builtins.diagnostics.cspell,
+      null_ls.builtins.diagnostics.cspell.with({
+        extra_args = { "--config", "~/.config/nvim/cspell/cspell.json" },
+        config = {
+            find_json = function(cwd)
+              return vim.fn.resolve(os.getenv('HOME') .. "/.config/nvim/cspell/cspell.json")
+            end
+        },
+      }),
       null_ls.builtins.code_actions.cspell.with({
         config = {
             find_json = function(cwd)
