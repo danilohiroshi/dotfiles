@@ -1,4 +1,5 @@
 local null_ls = require("null-ls")
+local cspell = require('cspell')
 
 local on_attach = function(client)
   if client.server_capabilities.document_formatting then
@@ -9,6 +10,8 @@ end
 -- - Supported linters: https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
 null_ls.setup({
     sources = {
+      null_ls.builtins.diagnostics.cspell,
+      null_ls.builtins.code_actions.cspell,
       null_ls.builtins.diagnostics.eslint_d.with({
         condition = function(utils)
           return utils.root_has_file({ '.eslintrc.js' })

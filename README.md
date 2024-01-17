@@ -135,6 +135,9 @@ nvim
 - npx gulp vsDebugServerBundle
 - rm -rf out && mv dist out
 
+## Install Spell Checker
+- npm install -g cspell@latest
+
 ## Install LSP clients
 
 - Enter nvim

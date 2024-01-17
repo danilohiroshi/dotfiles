@@ -83,6 +83,7 @@ return require('packer').startup(function()
 
   -- Spell check
   use {'lewis6991/spellsitter.nvim'}
+  use {'davidmh/cspell.nvim'}
 
   -- Leap
   use { 'ggandor/leap.nvim', requires = 'tpope/vim-repeat' }

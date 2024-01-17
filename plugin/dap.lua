@@ -1,3 +1,24 @@
+require("dap-vscode-js").setup({
+  -- Path of node executable. Defaults to $NODE_PATH, and then "node"
+  -- node_path = "node",
+
+  -- Path to vscode-js-debug installation.
+  debugger_path = vim.fn.resolve(os.getenv('HOME') .. "/Code/vscode-js-debug"),
+
+  -- Command to use to launch the debug server. Takes precedence over "node_path" and "debugger_path"
+  -- debugger_cmd = { "js-debug-adapter" },
+
+  -- which adapters to register in nvim-dap
+  adapters = {
+    "chrome",
+    "pwa-node",
+    "pwa-chrome",
+    "pwa-msedge",
+    "pwa-extensionHost",
+    "node-terminal",
+  },
+})
+
 local js_based_languages = {
   "typescript",
   "javascript",
@@ -58,31 +79,11 @@ for _, language in ipairs(js_based_languages) do
       type = "node-terminal",
       request = "launch",
       command= "npm run dev",
-      webRoot = vim.fn.getcwd(),
       sourceMaps = true,
+      cwd = "${workspaceFolder}",
     }
   }
 end
-require("dap-vscode-js").setup({
-  -- Path of node executable. Defaults to $NODE_PATH, and then "node"
-  -- node_path = "node",
-
-  -- Path to vscode-js-debug installation.
-  debugger_path = vim.fn.resolve(os.getenv('HOME') .. "/Code/vscode-js-debug"),
-
-  -- Command to use to launch the debug server. Takes precedence over "node_path" and "debugger_path"
-  -- debugger_cmd = { "js-debug-adapter" },
-
-  -- which adapters to register in nvim-dap
-  adapters = {
-    "chrome",
-    "pwa-node",
-    "pwa-chrome",
-    "pwa-msedge",
-    "pwa-extensionHost",
-    "node-terminal",
-  },
-})
 
 -- dap.adapters.node = {
 --   type = 'executable',
