@@ -10,7 +10,13 @@ end
 null_ls.setup({
     sources = {
       null_ls.builtins.diagnostics.cspell,
-      null_ls.builtins.code_actions.cspell,
+      null_ls.builtins.code_actions.cspell.with({
+        config = {
+            find_json = function(cwd)
+              return vim.fn.resolve(os.getenv('HOME') .. ".config/nvim/cspell/cspell.json")
+            end
+        },
+      }),
       null_ls.builtins.diagnostics.eslint_d.with({
         condition = function(utils)
           return utils.root_has_file({ '.eslintrc.js' })
