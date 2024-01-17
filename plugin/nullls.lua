@@ -13,7 +13,7 @@ null_ls.setup({
       null_ls.builtins.code_actions.cspell.with({
         config = {
             find_json = function(cwd)
-              return vim.fn.resolve(os.getenv('HOME') .. ".config/nvim/cspell/cspell.json")
+              return vim.fn.resolve(os.getenv('HOME') .. "/.config/nvim/cspell/cspell.json")
             end
         },
       }),
