@@ -136,6 +136,7 @@ nvim
 - rm -rf out && mv dist out
 
 ## Install Spell Checker
+- Maybe not needed, check later
 - npm install -g cspell@latest
 
 ## Install LSP clients
