@@ -49,23 +49,6 @@ mkdir -p ~/.local/share/fonts
 cp ~/.config/nvim/fonts/*.ttf ~/.local/share/fonts
 ```
 
-## Install ZSH
-
-```
-sudo apt install zsh -y
-```
-
-- In ~/.bashrc, add "exec zsh"
-
-## Install Oh-my-zsh
-
-- https://ohmyz.sh/#install
-- Copy config
-
-```
-cp ~/.config/nvim/zsh/.zshrc ~/
-```
-
 ## Install xclip
 
 - Only if using X11
@@ -90,6 +73,7 @@ sudo apt install xclip
 
 ## Install Linters
 
+- jshint: `npm install -g typescript`
 - jshint: `npm install -g jshint`
 - prettier: `npm install -g prettier`
 - prettier: `npm install -g eslint`
