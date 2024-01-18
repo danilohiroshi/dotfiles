@@ -196,6 +196,11 @@ return require('packer').startup(function()
     'voldikss/vim-floaterm',
   })
 
+  -- Terminal
+  use({
+    'j-hui/fidget.nvim',
+  })
+
   -- Tester
   use {
     "nvim-neotest/neotest",
