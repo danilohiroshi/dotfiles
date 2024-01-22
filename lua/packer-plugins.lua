@@ -212,5 +212,7 @@ return require('packer').startup(function()
     }
   }
 
+  use ({'windwp/nvim-ts-autotag'})
+
   -- END
 end)
