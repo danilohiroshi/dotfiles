@@ -84,9 +84,5 @@ vim.keymap.set('i', '<c-w>', '<esc>:bd<CR>')
 vim.keymap.set('v', '<c-w>', '<esc>:bd<CR>')
 
 -- Tab navigation
-vim.keymap.set('n', '<PageUp>', '<cmd>bnext<CR>')
-vim.keymap.set('n', '<PageDown>', '<cmd>bprevious<CR>')
-vim.keymap.set('i', '<PageUp>', '<cmd>bnext<CR>')
-vim.keymap.set('i', '<PageDown>', '<cmd>bprevious<CR>')
-vim.keymap.set('v', '<PageUp>', '<cmd>bnext<CR>')
-vim.keymap.set('v', '<PageDown>', '<cmd>bprevious<CR>')
+vim.keymap.set('n', '<tab>', '<cmd>bnext<CR>')
+vim.keymap.set('n', '<S-tab>', '<cmd>bprevious<CR>')
