@@ -1,11 +1,18 @@
 ## Install git
 
-```basg
+```bash
 sudo apt install git
 git config --global  user.email "example@example.com"
 git config --global  user.name "Example"
 git config --global credential.helper "cache --timeout=43200"
 ```
+
+## Configure aliases
+```bash
+cp ~/.config/nvim/bash/bash_aliases ~/.bash_aliases
+```
+
+
 
 ## Install Neovim
 
