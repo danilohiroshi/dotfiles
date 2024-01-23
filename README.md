@@ -99,6 +99,7 @@ cp ~/.config/nvim/kitty/* ~/.config/kitty
 
 ```bash
 sudo apt install meld
+git config --global diff.tool meld
 ```
 
 ## Install plugins
