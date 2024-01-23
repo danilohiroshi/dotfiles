@@ -95,6 +95,11 @@ sudo apt install kitty
 mkdir -p ~/.config/kitty
 cp ~/.config/nvim/kitty/* ~/.config/kitty
 ```
+## Install Meld
+
+```bash
+sudo apt install meld
+```
 
 ## Install plugins
 
