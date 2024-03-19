@@ -21,4 +21,13 @@ require('nvim-treesitter.configs').setup({
   context_commentstring = {
     enable = true,
   },
+  incremental_selection = {
+    enable = true,
+    keymaps = {
+      init_selection = "sb",
+      node_incremental = "sbn",
+      scope_incremental = "sbi",
+      node_decremental = "sbd",
+    },
+  }
 })
