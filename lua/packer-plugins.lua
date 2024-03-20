@@ -151,7 +151,8 @@ return require('packer').startup(function()
     "rcarriga/nvim-dap-ui",
     requires = {
       "mfussenegger/nvim-dap",
-      "mxsdev/nvim-dap-vscode-js"
+      "mxsdev/nvim-dap-vscode-js",
+      "nvim-neotest/nvim-nio"
     }
   }
 
