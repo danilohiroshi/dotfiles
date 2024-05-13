@@ -15,6 +15,8 @@ vim.api.nvim_set_keymap("i", "<c-s>", '<esc>:w<CR>i', opts)
 
 -- Ctrl+Z for undo
 vim.api.nvim_set_keymap("n", "<c-z>", '<esc>u>', opts)
+vim.api.nvim_set_keymap("i", "<c-z>", '<esc>u>', opts)
+vim.api.nvim_set_keymap("v", "<c-z>", '<esc>u>', opts)
 
 -- Ctrl+X
 vim.api.nvim_set_keymap("n", "<c-x>", '', opts)
