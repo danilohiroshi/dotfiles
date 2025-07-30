@@ -81,9 +81,9 @@ vim.keymap.set('i', '<c-l>', '<c-w>l')
 vim.keymap.set('i', '<c-h>', '<c-w>h')
 
 -- Close buffer
-vim.keymap.set('n', '<c-w>', ':bd<CR>')
-vim.keymap.set('i', '<c-w>', '<esc>:bd<CR>')
-vim.keymap.set('v', '<c-w>', '<esc>:bd<CR>')
+vim.keymap.set('n', '<c-q>', ':bd<CR>')
+vim.keymap.set('i', '<c-q>', '<esc>:bd<CR>')
+vim.keymap.set('v', '<c-q>', '<esc>:bd<CR>')
 
 -- Tab navigation
 vim.keymap.set('n', '<tab>', '<cmd>bnext<CR>')
