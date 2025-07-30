@@ -213,5 +213,10 @@ return require('packer').startup(function()
     }
   }
 
+  -- Session Manager
+  use {
+    "rmagatti/auto-session",
+  }
+
   -- END
 end)
