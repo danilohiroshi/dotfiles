@@ -120,9 +120,11 @@ return require('packer').startup(function()
   })
 
   -- File tree
-  use {
-    'stevearc/oil.nvim'
-  } 
+    use {
+    'A7Lavinraj/fyler.nvim',
+    requires = 'echasnovski/mini.icons',
+  }
+
   -- Highlight current word
   use {
     'RRethy/vim-illuminate'
