@@ -1,6 +1,7 @@
 
 require("auto-session").setup {
   suppressed_dirs = { "~/Documentos", "~/Code"},
+  auto_save = false
 }
 
 -- Shift Alt P
