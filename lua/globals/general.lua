@@ -38,7 +38,7 @@ vim.opt.scrolloff = 8
 vim.opt.sidescrolloff = 8
 
 -- Column guide
-vim.opt.colorcolumn = '80'
+-- vim.opt.colorcolumn = '80'
 
 -- Case sensitive automatically
 vim.opt.ignorecase = true
