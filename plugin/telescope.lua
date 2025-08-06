@@ -82,6 +82,6 @@ vim.keymap.set('v', '<c-r>', [[<cmd>lua require('telescope.builtin').lsp_documen
 vim.keymap.set('i', '<c-r>', [[<cmd>lua require('telescope.builtin').lsp_document_symbols()<CR>]])
 
 -- Pickers
-vim.api.nvim_set_keymap("n", "<c-h>", ':Telescope pickers<CR>', {noremap=true, silent=true})
-vim.api.nvim_set_keymap("v", "<c-h>", '<esc>:Telescope pickers<CR>', {noremap=true, silent=true})
-vim.api.nvim_set_keymap("i", "<c-h>", '<esc>:Telescope pickers<CR>', {noremap=true, silent=true})
+-- vim.api.nvim_set_keymap("n", "<c-h>", ':Telescope pickers<CR>', {noremap=true, silent=true})
+-- vim.api.nvim_set_keymap("v", "<c-h>", '<esc>:Telescope pickers<CR>', {noremap=true, silent=true})
+-- vim.api.nvim_set_keymap("i", "<c-h>", '<esc>:Telescope pickers<CR>', {noremap=true, silent=true})
