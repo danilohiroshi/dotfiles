@@ -32,6 +32,9 @@ return require('packer').startup(function()
     }
   })
 
+  use 'nvim-lua/plenary.nvim'
+  use 'nvim-pack/nvim-spectre'
+
   -- LSP
   use({
     'neovim/nvim-lspconfig',
