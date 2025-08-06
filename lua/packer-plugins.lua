@@ -32,8 +32,8 @@ return require('packer').startup(function()
     }
   })
 
-  use 'nvim-lua/plenary.nvim'
-  use 'nvim-pack/nvim-spectre'
+  -- Search in files
+  use 'MagicDuck/grug-far.nvim'
 
   -- LSP
   use({
