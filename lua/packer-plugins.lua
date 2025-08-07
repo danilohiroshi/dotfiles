@@ -162,6 +162,7 @@ return require('packer').startup(function()
   -- Mason
   use { "williamboman/mason.nvim" }
   use {'williamboman/mason-lspconfig.nvim'}
+  use {'jay-babu/mason-nvim-dap.nvim'}
 
   -- Indent guide
   use { 'lukas-reineke/indent-blankline.nvim' }
