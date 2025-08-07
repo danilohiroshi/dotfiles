@@ -4,5 +4,4 @@ require("mason-lspconfig").setup {
 }
 require("mason-nvim-dap").setup({
   ensure_installed = { "node2", "js-debug-adapter", "php-debug-adapter" }, -- Automatically install the Node.js adapter
-  automatic_setup = true, -- Automatically configure installed adapters
 })
