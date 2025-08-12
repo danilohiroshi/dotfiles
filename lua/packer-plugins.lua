@@ -222,6 +222,7 @@ return require('packer').startup(function()
     "rmagatti/auto-session",
   }
 
+  -- Notifications
   use 'rcarriga/nvim-notify'
   -- END
 end)
