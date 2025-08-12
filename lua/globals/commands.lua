@@ -25,5 +25,4 @@ vim.api.nvim_create_user_command('OpenRemoteURLAndCopyRelPath', function()
   -- Copy the current buffer's relative path to the clipboard
   local relative_path = vim.fn.expand('%')
   vim.fn.setreg('+', relative_path)
-  print('Copied relative path: ' .. relative_path)
 end, {})
