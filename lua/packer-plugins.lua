@@ -224,5 +224,8 @@ return require('packer').startup(function()
 
   -- Notifications
   use 'rcarriga/nvim-notify'
+
+  -- Animate Mini
+  use 'echasnovski/mini.animate'
   -- END
 end)
