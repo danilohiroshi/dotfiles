@@ -13,6 +13,10 @@ require('onedark').setup {
       fg = '$background_light',
       bg = '$background_light'
     },
+    TelescopeBorder = { 
+      fg = '$background_darker',
+      bg = '$background_darker'
+    },
     TelescopePreviewBorder = { 
       fg = '$background_darker',
       bg = '$background_darker'

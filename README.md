@@ -26,7 +26,7 @@ sudo apt-get install neovim
 
 ```
 mkdir ~/.config/nvim
-git clone https://github.com/danilohiroshi/neovim.git ~/.config/nvim
+git clone https://github.com/danilohiroshi/dotfiles.git ~/.config/nvim
 ```
 
 ## Install dependencies
@@ -102,10 +102,9 @@ sudo apt install meld
 git config --global diff.tool meld
 ```
 
-## Install plugins
+## Install lazy
 
-- Install packer
-- https://github.com/wbthomason/packer.nvim#quickstart
+- git clone https://github.com/folke/lazy.nvim.git ~/.config/nvim/lazy
 
 ```bash
 # Open neovim
