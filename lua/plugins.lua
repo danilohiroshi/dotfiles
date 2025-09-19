@@ -122,7 +122,7 @@ require("lazy").setup({
   },
 
   -- File tree
-  { "A7Lavinraj/fyler.nvim", dependencies = "echasnovski/mini.icons" },
+  { "A7Lavinraj/fyler.nvim", dependencies = "nvim-mini/mini.icons" },
 
   -- Highlight current word
   { "RRethy/vim-illuminate" },
@@ -212,5 +212,5 @@ require("lazy").setup({
   "rcarriga/nvim-notify",
 
   -- Animate Mini
-  "echasnovski/mini.animate",
+  "nvim-mini/mini.animate",
 })
