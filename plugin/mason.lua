@@ -15,7 +15,16 @@ require("mason-lspconfig").setup({
     "ts_ls",
     "html",
     "cssls",
-    "jsonls"
+    "jsonls",
+    "eslint"  -- ESLint como LSP
+  },
+  automatic_installation = true,
+})
+
+require("mason-null-ls").setup({
+  ensure_installed = {
+    "prettier",  -- Formatação JS/TS/HTML/CSS
+    "stylua",    -- Formatação Lua
   },
   automatic_installation = true,
 })

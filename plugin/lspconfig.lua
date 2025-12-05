@@ -47,7 +47,6 @@ local on_attach = function(client, bufnr)
     vim.lsp.buf.format { async = true }
   end, vim.tbl_extend('force', opts, { desc = "Format" }))
 
-  -- Highlight do símbolo sob o cursor
   if client.server_capabilities.documentHighlightProvider then
     vim.api.nvim_create_augroup("lsp_document_highlight", { clear = false })
     vim.api.nvim_clear_autocmds({ buffer = bufnr, group = "lsp_document_highlight" })
@@ -153,6 +152,85 @@ vim.lsp.config('ts_ls', {
   }
 })
 
+vim.lsp.config('eslint', {
+  cmd = { 'vscode-eslint-language-server', '--stdio' },
+  filetypes = {
+    'javascript',
+    'javascriptreact',
+    'javascript.jsx',
+    'typescript',
+    'typescriptreact',
+    'typescript.tsx',
+    'vue',
+    'svelte',
+    'astro'
+  },
+  root_markers = {
+    '.eslintrc.js',
+    '.eslintrc.cjs',
+    '.eslintrc.yaml',
+    '.eslintrc.yml',
+    '.eslintrc.json',
+    'eslint.config.js',
+    'eslint.config.mjs',
+  },
+  condition = function()
+    local config_files = {
+      '.eslintrc.js',
+      '.eslintrc.cjs',
+      '.eslintrc.yaml',
+      '.eslintrc.yml',
+      '.eslintrc.json',
+      'eslint.config.js',
+      'eslint.config.mjs',
+    }
+
+    for _, config in ipairs(config_files) do
+      if vim.fn.filereadable(config) == 1 then
+        return true
+      end
+    end
+    return false
+  end,
+  on_attach = function(client, bufnr)
+    on_attach(client, bufnr)
+    local opts = { buffer = bufnr, silent = true }
+    vim.keymap.set('n', '<leader>es', function()
+      vim.lsp.buf.execute_command({
+        command = 'eslint.executeAutofix',
+        arguments = { { uri = vim.uri_from_bufnr(bufnr) } }
+      })
+    end, vim.tbl_extend('force', opts, { desc = "ESLint Autofix" }))
+  end,
+  capabilities = capabilities,
+  settings = {
+    codeAction = {
+      disableRuleComment = {
+        enable = true,
+        location = "separateLine"
+      },
+      showDocumentation = {
+        enable = true
+      }
+    },
+    codeActionOnSave = {
+      enable = false,
+      mode = "all"
+    },
+    format = false,
+    nodePath = "",
+    onIgnoredFiles = "off",
+    packageManager = "npm",
+    quiet = false,
+    run = "onType",
+    useESLintClass = false,
+    validate = "on",
+    workingDirectory = {
+      mode = "auto"
+    }
+  }
+})
+
 vim.lsp.config('html', {
   cmd = { 'vscode-html-language-server', '--stdio' },
   filetypes = { 'html' },
@@ -181,6 +259,7 @@ vim.lsp.config('jsonls', {
 vim.lsp.enable('lua_ls')
 vim.lsp.enable('intelephense')
 vim.lsp.enable('ts_ls')
+vim.lsp.enable('eslint')
 vim.lsp.enable('html')
 vim.lsp.enable('cssls')
 vim.lsp.enable('jsonls')

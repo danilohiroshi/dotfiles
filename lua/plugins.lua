@@ -50,7 +50,6 @@ require("lazy").setup({
   {
     "hrsh7th/nvim-cmp",
     dependencies = {
-      "L3MON4D3/LuaSnip",
       "hrsh7th/cmp-buffer",
       "hrsh7th/cmp-cmdline",
       "hrsh7th/cmp-nvim-lsp",
@@ -58,7 +57,6 @@ require("lazy").setup({
       "hrsh7th/cmp-nvim-lua",
       "jessarcher/cmp-path",
       "onsails/lspkind-nvim",
-      "saadparwaiz1/cmp_luasnip",
     }
   },
 
@@ -100,8 +98,6 @@ require("lazy").setup({
     end,
   },
 
-  -- Snippets
-  "L3MON4D3/LuaSnip",
 
   -- Assorted tpope plugins
   "tpope/vim-repeat",
