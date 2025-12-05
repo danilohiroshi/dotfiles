@@ -95,7 +95,6 @@ require("lazy").setup({
     end,
   },
 
-
   -- Assorted tpope plugins
   "tpope/vim-repeat",
   "tpope/vim-surround",
@@ -114,8 +113,80 @@ require("lazy").setup({
     dependencies = "nvim-lua/plenary.nvim",
   },
 
-  -- File tree
-  { "A7Lavinraj/fyler.nvim", dependencies = "nvim-mini/mini.icons" },
+  -- Mini.nvim suite (includes files, icons, animate)
+  {
+    "echasnovski/mini.nvim",
+    version = "*", -- use stable release
+    config = function()
+      -- Setup mini.files
+      require("mini.files").setup({
+        -- Customization of shown content
+        content = {
+          -- Predicate for which file system entries to show
+          filter = nil,
+          -- What prefix to show to the left of file system entry
+          prefix = nil,
+          -- In which order to show file system entries
+          sort = nil,
+        },
+        
+        -- Module mappings created only inside explorer.
+        mappings = {
+          close       = 'q',
+          go_in       = 'l',
+          go_in_plus  = 'L',
+          go_out      = 'h',
+          go_out_plus = 'H',
+          reset       = '<BS>',
+          reveal_cwd  = '@',
+          show_help   = 'g?',
+          synchronize = '=',
+          trim_left   = '<',
+          trim_right  = '>',
+        },
+        
+        -- General options
+        options = {
+          -- Whether to delete permanently or move into module-specific trash
+          permanent_delete = true,
+          -- Whether to use for editing directories
+          use_as_default_explorer = true,
+        },
+        
+        -- Customization of explorer windows
+        windows = {
+          -- Maximum number of windows to show side by side
+          max_number = math.huge,
+          -- Whether to show preview of file/directory under cursor
+          preview = false,
+          -- Width of focused window
+          width_focus = 50,
+          -- Width of non-focused window
+          width_nofocus = 15,
+          -- Width of preview window
+          width_preview = 25,
+        },
+      })
+      
+      -- Setup mini.icons
+      require("mini.icons").setup({
+        -- Icon style: 'glyph' or 'ascii'
+        style = 'glyph',
+        
+        -- Customize icons per category
+        default = {},
+        directory = {},
+        extension = {},
+        file = {},
+        filetype = {},
+        lsp = {},
+        os = {},
+      })
+      
+      -- Setup mini.animate (optional)
+      -- require("mini.animate").setup()
+    end,
+  },
 
   -- Highlight current word
   { "RRethy/vim-illuminate" },
@@ -203,7 +274,4 @@ require("lazy").setup({
 
   -- Notifications
   "rcarriga/nvim-notify",
-
-  -- Animate Mini
-  "nvim-mini/mini.animate",
 })
