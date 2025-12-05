@@ -87,9 +87,6 @@ require("lazy").setup({
   { "lewis6991/spellsitter.nvim" },
   { "davidmh/cspell.nvim" },
 
-  -- Leap
-  { "ggandor/leap.nvim", dependencies = "tpope/vim-repeat" },
-
   -- Autopairs
   {
     "windwp/nvim-autopairs",
