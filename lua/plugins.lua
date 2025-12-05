@@ -1,21 +1,74 @@
--- Set the runtime path to include lazy.nvim
 vim.opt.rtp:prepend("~/.config/nvim/lazy")
 
 require("lazy").setup({
-  -- Lazy can manage itself
   "folke/lazy.nvim",
   
-  -- One Dark theme
   {
     "navarasu/onedark.nvim",
     config = function()
+      require('onedark').setup {
+        colors = {
+          indent_line = '#31353f',
+          context_color = '#61afef',
+          background = '#282c34',
+          background_light = '#31353f',
+          background_darker = '#23252c',
+          light_grey = '#c4c4c4',
+          background_statusline = '#393f4a'
+        },
+        highlights = {
+          FloatBorder = {
+            fg = '$background_light',
+            bg = '$background_light'
+          },
+          TelescopeBorder = {
+            fg = '$background_darker',
+            bg = '$background_darker'
+          },
+          TelescopePreviewBorder = {
+            fg = '$background_darker',
+            bg = '$background_darker'
+          },
+          TelescopePromptBorder = {
+            fg = '$background_light',
+            bg = '$background_light'
+          },
+          TelescopeResultsBorder = {
+            fg = '$background_darker',
+            bg = '$background_darker'
+          },
+          TelescopePromptNormal = {
+            fg = '$light_grey',
+            bg = '$background_light'
+          },
+          TelescopePreviewNormal = {
+            fg = '$light_grey',
+            bg = '$background_darker'
+          },
+          TelescopeResultsNormal = {
+            fg = '$light_grey',
+            bg = '$background_darker'
+          },
+          TelescopePromptTitle = {
+            fg = '$light_grey',
+            bg = '$background_light'
+          },
+          TelescopePreviewTitle = {
+            fg = '$light_grey',
+            bg = '$background_darker'
+          },
+          TelescopeResultsTitle = {
+            fg = '$light_grey',
+            bg = '$background_darker'
+          },
+        }
+      }
       vim.cmd('colorscheme onedark')
     end,
   },
 
-  -- Treesitter
   {
-    "nvim-treesitter/nvim-treesitter",
+      "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
     dependencies = {
       "nvim-treesitter/playground",
@@ -23,7 +76,6 @@ require("lazy").setup({
     }
   },
 
-  -- Telescope
   {
     "nvim-telescope/telescope.nvim",
     dependencies = {
@@ -34,10 +86,8 @@ require("lazy").setup({
     },
   },
 
-  -- Grug-far.nvim
   "MagicDuck/grug-far.nvim",
 
-  -- LSP Configuration
   {
     "neovim/nvim-lspconfig",
     dependencies = {
@@ -46,7 +96,6 @@ require("lazy").setup({
     }
   },
 
-  -- Auto-completion
   {
     "hrsh7th/nvim-cmp",
     dependencies = {
@@ -60,7 +109,6 @@ require("lazy").setup({
     }
   },
 
-  -- Code Actions
   {
     "weilbith/nvim-code-action-menu",
     cmd = "CodeActionMenu",
@@ -70,24 +118,19 @@ require("lazy").setup({
     dependencies = "antoinemadec/FixCursorHold.nvim",
   },
 
-  -- Status Line
   {
     "nvim-lualine/lualine.nvim",
     dependencies = { "kyazdani42/nvim-web-devicons", optional = true }
   },
   "arkav/lualine-lsp-progress",
 
-  -- Buffer line
   { "akinsho/bufferline.nvim", dependencies = "kyazdani42/nvim-web-devicons" },
 
-  -- Multicursor
   { "mg979/vim-visual-multi" },
 
-  -- Spell check
   { "lewis6991/spellsitter.nvim" },
   { "davidmh/cspell.nvim" },
 
-  -- Autopairs
   {
     "windwp/nvim-autopairs",
     config = function()
@@ -95,14 +138,12 @@ require("lazy").setup({
     end,
   },
 
-  -- Assorted tpope plugins
   "tpope/vim-repeat",
   "tpope/vim-surround",
   "tpope/vim-eunuch",
   "tpope/vim-unimpaired",
   "tpope/vim-sleuth",
 
-  -- Git integration
   {
     "tpope/vim-fugitive",
     dependencies = "tpope/vim-rhubarb",
@@ -113,24 +154,17 @@ require("lazy").setup({
     dependencies = "nvim-lua/plenary.nvim",
   },
 
-  -- Mini.nvim suite (includes files, icons, animate)
   {
     "echasnovski/mini.nvim",
-    version = "*", -- use stable release
+    version = "*",
     config = function()
-      -- Setup mini.files
       require("mini.files").setup({
-        -- Customization of shown content
         content = {
-          -- Predicate for which file system entries to show
           filter = nil,
-          -- What prefix to show to the left of file system entry
           prefix = nil,
-          -- In which order to show file system entries
           sort = nil,
         },
-        
-        -- Module mappings created only inside explorer.
+
         mappings = {
           close       = 'q',
           go_in       = 'l',
@@ -144,36 +178,24 @@ require("lazy").setup({
           trim_left   = '<',
           trim_right  = '>',
         },
-        
-        -- General options
+
         options = {
-          -- Whether to delete permanently or move into module-specific trash
           permanent_delete = true,
-          -- Whether to use for editing directories
           use_as_default_explorer = true,
         },
-        
-        -- Customization of explorer windows
+
         windows = {
-          -- Maximum number of windows to show side by side
           max_number = math.huge,
-          -- Whether to show preview of file/directory under cursor
           preview = false,
-          -- Width of focused window
           width_focus = 50,
-          -- Width of non-focused window
           width_nofocus = 15,
-          -- Width of preview window
           width_preview = 25,
         },
       })
-      
-      -- Setup mini.icons
+
       require("mini.icons").setup({
-        -- Icon style: 'glyph' or 'ascii'
         style = 'glyph',
-        
-        -- Customize icons per category
+
         default = {},
         directory = {},
         extension = {},
@@ -182,16 +204,11 @@ require("lazy").setup({
         lsp = {},
         os = {},
       })
-      
-      -- Setup mini.animate (optional)
-      -- require("mini.animate").setup()
     end,
   },
 
-  -- Highlight current word
   { "RRethy/vim-illuminate" },
 
-  -- Doc block
   {
     "danymat/neogen",
     config = function()
@@ -200,12 +217,10 @@ require("lazy").setup({
     dependencies = "nvim-treesitter/nvim-treesitter",
   },
 
-  -- Linters
   { "nvimtools/none-ls.nvim" },
   { "nvimtools/none-ls-extras.nvim" },
   { "jayp0521/mason-null-ls.nvim" },
 
-  -- Debugger
   {
     "rcarriga/nvim-dap-ui",
     dependencies = {
@@ -215,36 +230,27 @@ require("lazy").setup({
     }
   },
 
-  -- Mason
   { "williamboman/mason.nvim" },
   { "williamboman/mason-lspconfig.nvim" },
   { "jay-babu/mason-nvim-dap.nvim" },
 
-  -- Indent guide
   { "lukas-reineke/indent-blankline.nvim" },
 
-  -- Trouble
   {
     "folke/trouble.nvim",
     dependencies = "kyazdani42/nvim-web-devicons",
   },
 
-  -- Better quickfix
   { "kevinhwang91/nvim-bqf" },
 
-  -- Scrollbar
   "petertriho/nvim-scrollbar",
 
-  -- Which key
   "folke/which-key.nvim",
 
-  -- Buffer management
   "kazhala/close-buffers.nvim",
 
-  -- Vim Heritage
   "jessarcher/vim-heritage",
 
-  -- Vim Pasta
   {
     "sickill/vim-pasta",
     config = function()
@@ -252,13 +258,10 @@ require("lazy").setup({
     end,
   },
 
-  -- Terminal
   "voldikss/vim-floaterm",
 
-  -- Fidget
   "j-hui/fidget.nvim",
 
-  -- Tester
   {
     "nvim-neotest/neotest",
     dependencies = {
@@ -268,10 +271,7 @@ require("lazy").setup({
       "haydenmeade/neotest-jest",
     }
   },
-
-  -- Session Manager
   "rmagatti/auto-session",
 
-  -- Notifications
   "rcarriga/nvim-notify",
 })
